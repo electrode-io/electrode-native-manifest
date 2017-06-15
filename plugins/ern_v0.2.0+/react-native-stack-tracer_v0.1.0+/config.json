@@ -1,0 +1,10 @@
+{
+  "origin": {
+    "type": "git",
+    "url": "https://github.com/aoriani/ReactNative-StackTracer.git"
+  },
+  "android": {
+    "root": "",
+    "moduleName": "rnstacktracer"
+  }
+}
