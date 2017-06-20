@@ -4,7 +4,7 @@
   },
   "ios": {
     "copy": [
-      { "source": "ios/**", "dest": "ElectrodeContainer/Libraries/CodePush" }
+      { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/CodePush" }
     ],
     "pbxproj": {
       "addStaticLibrary": [
@@ -14,7 +14,7 @@
         { "path": "CodePush/CodePush.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libCodePush.a", "target": "CodePush" } ] }
       ],
       "addHeaderSearchPath": [
-        "\"$(SRCROOT)/ElectrodeContainer/Libraries/CodePush/**\""
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/CodePush/**\""
       ]
     }
   }
