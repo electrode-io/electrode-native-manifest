@@ -4,13 +4,13 @@
   },
   "ios": {
     "copy": [
-      { "source": "ios/ElectrodeReactNativeBridge/*", "dest": "ElectrodeContainer/ElectrodeReactNativeBridge" }
+      { "source": "ios/ElectrodeReactNativeBridge/*", "dest": "{{{projectName}}}/ElectrodeReactNativeBridge" }
     ],
     "replaceInFile": [
       {
-        "path": "ElectrodeContainer/ElectrodeReactNativeBridge/ElectrodeBridgeMessage.m",
+        "path": "{{{projectName}}}/ElectrodeReactNativeBridge/ElectrodeBridgeMessage.m",
         "string": "#import <ElectrodeReactNativeBridge/ElectrodeReactNativeBridge-Swift.h>",
-        "replaceWith": "#import <ElectrodeContainer/ElectrodeContainer-Swift.h>"
+        "replaceWith": "#import <{{{projectName}}}/{{{projectName}}}-Swift.h>"
       }
     ],
     "pbxproj": {
