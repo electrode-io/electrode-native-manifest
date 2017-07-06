@@ -35,8 +35,7 @@
         { "path": "ElectrodeReactNativeBridge/ElectrodeRequestDispatcher.h", "group": "ElectrodeReactNativeBridge" },
         { "path": "ElectrodeReactNativeBridge/ElectrodeRequestRegistrar.h", "group": "ElectrodeReactNativeBridge"},
         { "path": "ElectrodeReactNativeBridge/ElectrodeReactNativeBridge.h", "group": "ElectrodeReactNativeBridge"},
-        { "path": "ElectrodeReactNativeBridge/ElectrodeBridgeResponse.h", "group": "ElectrodeReactNativeBridge"},
-        { "path": "ElectrodeContainer/ElectrodeBridgeConfig.h", "group": "ElectrodeContainer", "public": true}
+        { "path": "ElectrodeReactNativeBridge/ElectrodeBridgeResponse.h", "group": "ElectrodeReactNativeBridge"}
       ],
       "addSource": [
         { "path": "ElectrodeReactNativeBridge/ElectrodeObject.swift", "group": "ElectrodeReactNativeBridge" },
@@ -61,8 +60,7 @@
         { "path": "ElectrodeReactNativeBridge/ElectrodeEventDispatcher.m", "group": "ElectrodeReactNativeBridge" },
         { "path": "ElectrodeReactNativeBridge/ElectrodeEventRegistrar.m", "group": "ElectrodeReactNativeBridge" },
         { "path": "ElectrodeReactNativeBridge/ElectrodeRequestDispatcher.m", "group": "ElectrodeReactNativeBridge" },
-        { "path": "ElectrodeReactNativeBridge/ElectrodeRequestRegistrar.m", "group": "ElectrodeReactNativeBridge" },
-        { "path": "ElectrodeContainer/ElectrodeBridgeConfig.h", "group": "ElectrodeContainer"}
+        { "path": "ElectrodeReactNativeBridge/ElectrodeRequestRegistrar.m", "group": "ElectrodeReactNativeBridge" }
       ]
     }
   }
