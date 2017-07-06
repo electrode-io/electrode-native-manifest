@@ -9,7 +9,7 @@
     "containerPublicHeader":["ElectrodeBridgeHolder.h", 
                              "ElectrodeBridgeProtocols.h",
                              "ElectrodeBridgeEvent.h",
-                             "ElectrodeBridgeRequest.h",
+                             "ElectrodeBridgeRequest.h"
     ],
     "replaceInFile": [
       {
