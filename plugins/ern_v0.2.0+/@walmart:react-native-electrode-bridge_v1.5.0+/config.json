@@ -10,7 +10,6 @@
                              "ElectrodeBridgeProtocols.h",
                              "ElectrodeBridgeEvent.h",
                              "ElectrodeBridgeRequest.h",
-                             "ElectrodeBridgeConfig.h"
     ],
     "replaceInFile": [
       {
