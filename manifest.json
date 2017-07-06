@@ -6,7 +6,7 @@
       "react-native-code-push@1.17.1-beta",
       "react-native-stack-tracer@0.1.1",
       "react-native-vector-icons@4.0.0",
-      "@walmart/react-native-electrode-bridge@2.0.2"
+      "@walmart/react-native-electrode-bridge@1.5.0"
     ],
     "targetJsDependencies": [
       "react@~15.4.1"
@@ -19,7 +19,7 @@
       "react-native-code-push@1.17.1-beta",
       "react-native-stack-tracer@0.1.1",
       "react-native-vector-icons@4.0.0",
-      "@walmart/react-native-electrode-bridge@2.0.2"
+      "@walmart/react-native-electrode-bridge@1.5.0"
     ],
     "targetJsDependencies": [
       "react@~15.4.1"
