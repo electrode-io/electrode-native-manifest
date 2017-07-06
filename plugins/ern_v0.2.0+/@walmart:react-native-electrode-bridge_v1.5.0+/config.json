@@ -6,6 +6,11 @@
     "copy": [
       { "source": "ios/ElectrodeReactNativeBridge/*", "dest": "{{{projectName}}}/ElectrodeReactNativeBridge" }
     ],
+    "containerPublicHeader":["ElectrodeBridgeHolder.h", 
+                             "ElectrodeBridgeProtocols.h",
+                             "ElectrodeBridgeEvent.h",
+                             "ElectrodeBridgeRequest.h"
+    ],
     "replaceInFile": [
       {
         "path": "{{{projectName}}}/ElectrodeReactNativeBridge/ElectrodeBridgeMessage.m",
