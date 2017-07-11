@@ -6,7 +6,7 @@
   "ios": {
     "copy": [
       { "source": "BVLinearGradient", "dest": "{{{projectName}}}/Libraries/BVLinearGradient" },
-      { "source": "BVLinearGradient.xcodeproj", "dest": "{{{projectName}}}/Libraries/BVLinearGradient.xcodeproj"}
+      { "source": "BVLinearGradient.xcodeproj", "dest": "{{{projectName}}}/Libraries/BVLinearGradient"}
     ],
     "pbxproj": {
        "addProject": [
