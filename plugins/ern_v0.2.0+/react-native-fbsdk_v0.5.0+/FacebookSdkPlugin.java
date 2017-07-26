@@ -20,6 +20,7 @@ public class FacebookSdkPlugin {
     public ReactPackage hook(@NonNull Application application,
                      @NonNull ReactInstanceManagerBuilder reactInstanceManagerBuilder,
                      @NonNull Config config) {
+        FacebookSdk.setAutoLogAppEventsEnabled(config.autoLogAppEventsEnabled);
         FacebookSdk.setApplicationId(config.appId);
         FacebookSdk.sdkInitialize(application);
         FBSDKPackage fbsdkPackage = new FBSDKPackage(mCallbackManager);
@@ -28,9 +29,16 @@ public class FacebookSdkPlugin {
     }
     public static class Config {
         private String appId;
+        private boolean autoLogAppEventsEnabled;
 
         public Config(@NonNull String appId) {
             this.appId = appId;
+            this.autoLogAppEventsEnabled = false;
+        }
+
+        public Config autoLogAppEventsEnabled(boolean autoLogAppEventsEnabled) {
+            this.autoLogAppEventsEnabled = autoLogAppEventsEnabled;
+            return this;
         }
     }
 }
