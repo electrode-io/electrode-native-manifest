@@ -18,10 +18,19 @@ public class FacebookSdkPlugin {
     }
 
     public ReactPackage hook(@NonNull Application application,
-                     @NonNull ReactInstanceManagerBuilder reactInstanceManagerBuilder) {
+                     @NonNull ReactInstanceManagerBuilder reactInstanceManagerBuilder,
+                     @NonNull Config config) {
+        FacebookSdk.setApplicationId(config.appId);
         FacebookSdk.sdkInitialize(application);
         FBSDKPackage fbsdkPackage = new FBSDKPackage(mCallbackManager);
         reactInstanceManagerBuilder.addPackage(fbsdkPackage);
         return fbsdkPackage;
+    }
+    public static class Config {
+        private String appId;
+
+        public Config(@NonNull String appId) {
+            this.appId = appId;
+        }
     }
 }
