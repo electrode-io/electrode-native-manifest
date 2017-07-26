@@ -10,6 +10,7 @@
       "react-native-maps@0.15.2",
       "react-native-linear-gradient@2.0.0",
       "react-native-keep-awake@2.0.3",
+      "react-native-llphotoassets@0.0.1",
       "@walmart/react-native-electrode-bridge@1.5.0"
     ],
     "targetJsDependencies": [
@@ -26,6 +27,7 @@
       "react-native-maps@0.15.2",
       "react-native-linear-gradient@2.0.0",
       "react-native-keep-awake@2.0.3",
+      "react-native-llphotoassets@0.0.1",
       "@walmart/react-native-electrode-bridge@1.5.0",
       "react-native-fbsdk@0.5.0"
     ],
