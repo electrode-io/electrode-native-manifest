@@ -1,0 +1,9 @@
+{
+  "android": {
+    "root": "",
+    "moduleName": "android",
+    "dependencies": [
+      "com.facebook.android:facebook-android-sdk:4.+"
+    ]
+  }
+}
