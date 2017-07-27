@@ -9,7 +9,7 @@
   },
   "ios": {
     "copy": [
-      { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/AirMaps" }
+      { "source": "lib/ios/**", "dest": "{{{projectName}}}/Libraries/AirMaps" }
     ],
     "pbxproj": {
        "addProject": [
