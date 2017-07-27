@@ -5,5 +5,18 @@
     "dependencies": [
       "com.facebook.android:facebook-android-sdk:4.+"
     ]
+  },
+  "ios": {
+    "copy": [
+      { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/RCTFBSDK" }
+    ],
+    "pbxproj": {
+       "addProject": [
+        { "path": "RCTFBSDK/RCTFBSDK.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libRCTFBSDK.a", "target": "RCTFBSDK" } ] }
+      ],
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RCTFBSDK/**\""
+      ]
+    }
   }
 }
