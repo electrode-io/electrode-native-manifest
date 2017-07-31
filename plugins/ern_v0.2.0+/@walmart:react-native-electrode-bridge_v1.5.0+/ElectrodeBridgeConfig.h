@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface ElectrodeBridgeConfig : NSObject
+#import "ElectrodeReactNative.h"
+@interface ElectrodeBridgeConfig : NSObject<ElectrodePluginConfig>
 
 @end
