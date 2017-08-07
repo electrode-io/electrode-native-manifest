@@ -21,6 +21,26 @@
     ]
   },
   {
+    "platformVersion": "0.3.x",
+    "targetNativeDependencies": [
+      "react-native@0.42.0",
+      "react-native-code-push@1.17.1-beta",
+      "react-native-stack-tracer@0.1.1",
+      "react-native-vector-icons@4.0.0",
+      "react-native-maps@0.13.1",
+      "react-native-linear-gradient@2.1.0",
+      "react-native-keep-awake@2.0.4",
+      "react-native-llphotoassets@0.0.1",
+      "react-native-lluploader@0.0.2",
+      "react-native-llimageview@0.0.5",
+      "@walmart/react-native-electrode-bridge@1.5.0",
+      "react-native-fbsdk@0.5.0"
+    ],
+    "targetJsDependencies": [
+      "react@15.4.2"
+    ]
+  },
+  {
     "platformVersion": "1000.0.0",
     "targetNativeDependencies": [
       "react-native@0.42.0",
