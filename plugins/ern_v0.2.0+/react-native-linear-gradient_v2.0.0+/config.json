@@ -4,6 +4,9 @@
     "moduleName": "android"
   },
   "ios": {
+    "pluginHook": {
+      "configurable": false
+    },
     "copy": [
       { "source": "BVLinearGradient", "dest": "{{{projectName}}}/Libraries/BVLinearGradient" },
       { "source": "BVLinearGradient.xcodeproj", "dest": "{{{projectName}}}/Libraries/BVLinearGradient"}

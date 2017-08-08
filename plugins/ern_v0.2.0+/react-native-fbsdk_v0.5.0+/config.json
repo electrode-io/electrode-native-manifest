@@ -7,6 +7,9 @@
     ]
   },
   "ios": {
+    "pluginHook": {
+      "configurable": false
+    },
     "copy": [
       { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/RCTFBSDK" }
     ],
