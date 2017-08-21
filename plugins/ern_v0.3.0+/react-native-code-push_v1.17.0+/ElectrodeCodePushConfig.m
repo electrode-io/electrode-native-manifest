@@ -43,7 +43,9 @@
 - (void)setupConfigWithDelegate: (id<RCTBridgeDelegate>) delegate {
     [CodePush initialize];
     [CodePush setDeploymentKey:self.deploymentKey];
-    [CodePushConfig current].serverURL = self.serverURL;
+    if (self.serverURL) {
+      [CodePushConfig current].serverURL = self.serverURL;
+    }
     if (!self.containerConfig.debugEnabled) {
         if ([delegate isKindOfClass:[ElectrodeBridgeDelegate class]]) {
             ElectrodeBridgeDelegate *bridgeDelegate = (ElectrodeBridgeDelegate *)delegate;
