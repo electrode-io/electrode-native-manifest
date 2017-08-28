@@ -4,7 +4,9 @@
         "configurable": false
       },
       "copy": [
-        { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/RNLocation" }
+        { "source": "RNLocation.h", "dest": "{{{projectName}}}/Libraries/RNLocation/RNLocation.h" },
+        { "source": "RNLocation.m", "dest": "{{{projectName}}}/Libraries/RNLocation/RNLocation.m" },
+        { "source": "RNLocation.xcodeproj", "dest": "{{{projectName}}}/Libraries/RNLocation"}
       ],
       "pbxproj": {
          "addProject": [
