@@ -1,0 +1,18 @@
+{
+    "ios": {
+      "pluginHook": {
+        "configurable": false
+      },
+      "copy": [
+        { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/RNLocation" }
+      ],
+      "pbxproj": {
+         "addProject": [
+          { "path": "RNLocation/RNLocation.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libRNLocation.a", "target": "RNLocation" } ] }
+        ],
+        "addHeaderSearchPath": [
+          "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNLocation/**\""
+        ]
+      }
+    }
+  }
