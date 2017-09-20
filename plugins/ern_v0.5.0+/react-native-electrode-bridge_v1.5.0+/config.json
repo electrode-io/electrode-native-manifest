@@ -6,10 +6,11 @@
     "copy": [
       { "source": "ios/ElectrodeReactNativeBridge/*", "dest": "{{{projectName}}}/ElectrodeReactNativeBridge" }
     ],
-    "containerPublicHeader":["ElectrodeBridgeHolder.h", 
+    "containerPublicHeader":["ElectrodeBridgeHolder.h",
                              "ElectrodeBridgeProtocols.h",
                              "ElectrodeBridgeEvent.h",
-                             "ElectrodeBridgeRequest.h"
+                             "ElectrodeBridgeRequest.h",
+                             "ElectrodeLogger.h"
     ],
     "replaceInFile": [
       {
@@ -34,7 +35,8 @@
         { "path": "ElectrodeReactNativeBridge/ElectrodeRequestDispatcher.h", "group": "ElectrodeReactNativeBridge" },
         { "path": "ElectrodeReactNativeBridge/ElectrodeRequestRegistrar.h", "group": "ElectrodeReactNativeBridge"},
         { "path": "ElectrodeReactNativeBridge/ElectrodeReactNativeBridge.h", "group": "ElectrodeReactNativeBridge"},
-        { "path": "ElectrodeReactNativeBridge/ElectrodeBridgeResponse.h", "group": "ElectrodeReactNativeBridge"}
+        { "path": "ElectrodeReactNativeBridge/ElectrodeBridgeResponse.h", "group": "ElectrodeReactNativeBridge"},
+        { "path": "ElectrodeReactNativeBridge/ElectrodeLogger.h", "group": "ElectrodeReactNativeBridge", "public": true}
       ],
       "addSource": [
         { "path": "ElectrodeReactNativeBridge/ElectrodeObject.swift", "group": "ElectrodeReactNativeBridge" },
@@ -58,7 +60,8 @@
         { "path": "ElectrodeReactNativeBridge/ElectrodeEventDispatcher.m", "group": "ElectrodeReactNativeBridge" },
         { "path": "ElectrodeReactNativeBridge/ElectrodeEventRegistrar.m", "group": "ElectrodeReactNativeBridge" },
         { "path": "ElectrodeReactNativeBridge/ElectrodeRequestDispatcher.m", "group": "ElectrodeReactNativeBridge" },
-        { "path": "ElectrodeReactNativeBridge/ElectrodeRequestRegistrar.m", "group": "ElectrodeReactNativeBridge" }
+        { "path": "ElectrodeReactNativeBridge/ElectrodeRequestRegistrar.m", "group": "ElectrodeReactNativeBridge" },
+        { "path": "ElectrodeReactNativeBridge/ElectrodeLogger.m", "group": "ElectrodeReactNativeBridge"}
       ]
     }
   }
