@@ -1,4 +1,9 @@
 {
+  "android": {
+    "copy": [
+      { "source": "Fonts/*", "dest": "lib/src/main/assets/fonts" }
+    ]
+  },
   "ios": {
     "pluginHook": {
         "configurable": false
