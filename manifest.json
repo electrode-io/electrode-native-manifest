@@ -32,7 +32,8 @@
       "react-native@0.48.3",
       "react-native-electrode-bridge@1.5.9",
       "react-native-maps@0.16.4",
-      "react-native-vector-icons@4.4.0"
+      "react-native-vector-icons@4.4.0",
+      "react-native-linear-gradient@2.3.0"
     ],
     "targetJsDependencies": [
     ]
@@ -43,7 +44,8 @@
       "react-native@0.48.3",
       "react-native-electrode-bridge@1.5.9",
       "react-native-maps@0.16.4",
-      "react-native-vector-icons@4.4.0"
+      "react-native-vector-icons@4.4.0",
+      "react-native-linear-gradient@2.3.0"
     ],
     "targetJsDependencies": [
     ]
