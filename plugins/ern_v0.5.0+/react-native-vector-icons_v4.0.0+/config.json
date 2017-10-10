@@ -5,9 +5,6 @@
     ]
   },
   "ios": {
-    "pluginHook": {
-        "configurable": false
-      },
     "copy": [
       { "source": "RNVectorIconsManager", "dest": "{{{projectName}}}/Libraries/RNVectorIcons" },
       { "source": "RNVectorIcons.xcodeproj", "dest": "{{{projectName}}}/Libraries/RNVectorIcons"},
