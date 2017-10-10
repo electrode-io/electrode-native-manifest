@@ -8,9 +8,6 @@
     ]
   },
   "ios": {
-    "pluginHook": {
-      "configurable": false
-    },
     "copy": [
       { "source": "lib/ios/**", "dest": "{{{projectName}}}/Libraries/AirMaps" }
     ],
