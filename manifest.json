@@ -70,18 +70,32 @@
     ]
   },
   {
+    "platformVersion": "0.10.x",
+    "targetNativeDependencies": [
+      "react-native@0.50.1",
+      "react-native-electrode-bridge@1.5.9",
+      "react-native-maps@0.17.0",
+      "react-native-vector-icons@4.4.2",
+      "react-native-linear-gradient@2.3.0",
+      "react-native-code-push@5.1.3-beta"
+    ],
+    "targetJsDependencies": [
+      "react@16.0.0"
+    ]
+  },
+  {
     "platformVersion": "1000.0.0",
     "targetNativeDependencies": [
-      "react-native@0.49.3",
+      "react-native@0.50.1",
       "react-native-electrode-bridge@1.5.9",
-      "react-native-maps@0.16.4",
-      "react-native-vector-icons@4.4.0",
+      "react-native-maps@0.17.0",
+      "react-native-vector-icons@4.4.2",
       "react-native-linear-gradient@2.3.0",
       "react-native-code-push@5.1.3-beta",
       "react-native-keep-awake@2.0.5"
     ],
     "targetJsDependencies": [
-      "react@16.0.0-beta.5"
+      "react@16.0.0"
     ]
   }
 ]
