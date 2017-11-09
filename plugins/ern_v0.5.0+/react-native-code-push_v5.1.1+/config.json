@@ -7,7 +7,7 @@
   },
   "ios": {
     "copy": [
-      { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/CodePush" }
+      { "source": "ios/*", "dest": "{{{projectName}}}/Libraries/CodePush" }
     ],
     "pbxproj": {
       "addStaticLibrary": [
