@@ -8,8 +8,8 @@
       "react-native-maps@0.13.1",
       "react-native-linear-gradient@2.1.0",
       "react-native-keep-awake@2.0.4",
-      "react-native-llphotoassets@0.0.1",
-      "react-native-lluploader@0.0.3",
+      "react-native-llphotoassets@0.0.2",
+      "react-native-lluploader@0.0.4",
       "react-native-llimageview@0.0.5",
       "react-native-electrode-bridge@1.5.5",
       "react-native-location@0.27.0"
