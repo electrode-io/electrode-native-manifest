@@ -1,18 +1,28 @@
 {
-  "ios": {
-    "pluginHook": {
-      "configurable": false
-    },
-    "copy": [
-      { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/LLImageView" }
-    ],
-    "pbxproj": {
-       "addProject": [
-        { "path": "LLImageView/LLImageView.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libLLImageView.a", "target": "LLImageView" } ] }
-      ],
-      "addHeaderSearchPath": [
-        "\"$(SRCROOT)/{{{projectName}}}/Libraries/LLImageView/**\""
-      ]
-    }
-  }
+	"android": {
+		"root": "",
+		"moduleName": "android"
+	},
+	"ios": {
+		"pluginHook": {
+			"configurable": false
+		},
+		"copy": [{
+			"source": "ios/**",
+			"dest": "{{{projectName}}}/Libraries/LLImageView"
+		}],
+		"pbxproj": {
+			"addProject": [{
+				"path": "LLImageView/LLImageView.xcodeproj",
+				"group": "Libraries",
+				"staticLibs": [{
+					"name": "libLLImageView.a",
+					"target": "LLImageView"
+				}]
+			}],
+			"addHeaderSearchPath": [
+				"\"$(SRCROOT)/{{{projectName}}}/Libraries/LLImageView/**\""
+			]
+		}
+	}
 }
