@@ -1,18 +1,28 @@
 {
-  "ios": {
-    "pluginHook": {
-      "configurable": false
-    },
-    "copy": [
-      { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/LLUploader" }
-    ],
-    "pbxproj": {
-       "addProject": [
-        { "path": "LLUploader/LLUploader.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libLLUploader.a", "target": "LLUploader" } ] }
-      ],
-      "addHeaderSearchPath": [
-        "\"$(SRCROOT)/{{{projectName}}}/Libraries/LLUploader/**\""
-      ]
-    }
-  }
+	"android": {
+		"root": "",
+		"moduleName": "android"
+	},
+	"ios": {
+		"pluginHook": {
+			"configurable": false
+		},
+		"copy": [{
+			"source": "ios/**",
+			"dest": "{{{projectName}}}/Libraries/LLUploader"
+		}],
+		"pbxproj": {
+			"addProject": [{
+				"path": "LLUploader/LLUploader.xcodeproj",
+				"group": "Libraries",
+				"staticLibs": [{
+					"name": "libLLUploader.a",
+					"target": "LLUploader"
+				}]
+			}],
+			"addHeaderSearchPath": [
+				"\"$(SRCROOT)/{{{projectName}}}/Libraries/LLUploader/**\""
+			]
+		}
+	}
 }
