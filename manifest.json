@@ -96,7 +96,7 @@
       "react-native-android-settings-library@1.0.3"
     ],
     "targetJsDependencies": [
-      "react@16.0.0-beta.5"
+      "react@16.0.0"
     ]
   }
 ]
