@@ -85,6 +85,21 @@
     ]
   },
   {
+    "platformVersion": "0.11.x",
+    "targetNativeDependencies": [
+      "react-native@0.51.0",
+      "react-native-electrode-bridge@1.5.9",
+      "react-native-maps@0.19.0",
+      "react-native-vector-icons@4.4.2",
+      "react-native-linear-gradient@2.3.0",
+      "react-native-code-push@5.2.1",
+      "react-native-android-settings-library@1.0.3"
+    ],
+    "targetJsDependencies": [
+      "react@16.0.0"
+    ]
+  },
+  {
     "platformVersion": "1000.0.0",
     "targetNativeDependencies": [
       "react-native@0.51.0",
