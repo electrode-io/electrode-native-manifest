@@ -1,8 +1,5 @@
 {
     "ios": {
-      "pluginHook": {
-        "configurable": false
-      },
       "copy": [
         { "source": "RNLocation.h", "dest": "{{{projectName}}}/Libraries/RNLocation" },
         { "source": "RNLocation.m", "dest": "{{{projectName}}}/Libraries/RNLocation" },
