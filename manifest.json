@@ -122,6 +122,24 @@
     ]
   },
   {
+    "platformVersion": "0.13.x",
+    "targetNativeDependencies": [
+      "react-native@0.53.0",
+      "react-native-electrode-bridge@1.5.9",
+      "react-native-maps@0.20.1",
+      "react-native-vector-icons@4.5.0",
+      "react-native-linear-gradient@2.4.0",
+      "react-native-code-push@5.2.1",
+      "react-native-android-settings-library@1.0.3",
+      "react-native-llimageview@1.0.0",
+      "react-native-lluploader@1.0.0",
+      "react-native-llphotoassets@1.0.0"
+    ],
+    "targetJsDependencies": [
+      "react@16.2.0"
+    ]
+  },
+  {
     "platformVersion": "1000.0.0",
     "targetNativeDependencies": [
       "react-native@0.53.0",
