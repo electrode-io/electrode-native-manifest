@@ -131,9 +131,9 @@
       "react-native-linear-gradient@2.4.0",
       "react-native-code-push@5.2.1",
       "react-native-android-settings-library@1.0.3",
-      "react-native-llimageview@1.0.0",
-      "react-native-lluploader@1.0.0",
-      "react-native-llphotoassets@1.0.0"
+      "react-native-llimageview@0.0.10",
+      "react-native-lluploader@0.1.3",
+      "react-native-llphotoassets@0.0.2"
     ],
     "targetJsDependencies": [
       "react@16.2.0"
@@ -149,9 +149,9 @@
       "react-native-linear-gradient@2.4.0",
       "react-native-code-push@5.2.1",
       "react-native-android-settings-library@1.0.3",
-      "react-native-llimageview@1.0.0",
-      "react-native-lluploader@1.0.0",
-      "react-native-llphotoassets@1.0.0"
+      "react-native-llimageview@0.0.10",
+      "react-native-lluploader@0.1.3",
+      "react-native-llphotoassets@0.0.2"
     ],
     "targetJsDependencies": [
       "react@16.2.0"
