@@ -1,0 +1,19 @@
+{
+  "android": {
+    "root": "",
+    "moduleName": "android"
+  },
+  "ios": {
+    "copy": [
+      { "source": "ios/*", "dest": "{{{projectName}}}/Libraries/RNSVG" }
+    ],
+    "pbxproj": {
+       "addProject": [
+        { "path": "RNSVG/RNSVG.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libRNSVG.a", "target": "RNSVG" } ] }
+      ],
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNSVG/**\""
+      ]
+    }
+  }
+}
