@@ -1,0 +1,25 @@
+{
+	"android": {
+		"root": "",
+		"moduleName": "android"
+	},
+	"ios": {
+		"copy": [{
+			"source": "ios/**",
+			"dest": "{{{projectName}}}/Libraries/ReactNativeExif"
+		}],
+		"pbxproj": {
+			"addProject": [{
+				"path": "ReactNativeExif/ReactNativeExif.xcodeproj",
+				"group": "Libraries",
+				"staticLibs": [{
+					"name": "libReactNativeExif.a",
+					"target": "ReactNativeExif"
+				}]
+			}],
+			"addHeaderSearchPath": [
+				"\"$(SRCROOT)/{{{projectName}}}/Libraries/ReactNativeExif/**\""
+			]
+		}
+	}
+}
