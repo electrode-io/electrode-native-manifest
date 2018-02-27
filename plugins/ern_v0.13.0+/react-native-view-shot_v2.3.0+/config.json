@@ -1,0 +1,19 @@
+{
+  "android": {
+    "root": "",
+    "moduleName": "android"
+  },
+  "ios": {
+    "copy": [
+      { "source": "ios/*", "dest": "{{{projectName}}}/Libraries/RNViewShot" }
+    ],
+    "pbxproj": {
+       "addProject": [
+        { "path": "RNViewShot/RNViewShot.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libRNViewShot.a", "target": "RNViewShot" } ] }
+      ],
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNViewShot/**\""
+      ]
+    }
+  }
+}
