@@ -10,7 +10,9 @@
       "com.google:cameraview:d5d9b0d925494ef451ce3eef3fdf14cc874d9baa"
     ],
     "permissions": [
+      "android.permission.CAMERA",
       "android.permission.RECORD_AUDIO",
+      "android.permission.RECORD_VIDEO",
       "android.permission.READ_EXTERNAL_STORAGE",
       "android.permission.WRITE_EXTERNAL_STORAGE"
     ]
