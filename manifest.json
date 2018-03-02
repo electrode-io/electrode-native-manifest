@@ -157,7 +157,8 @@
       "react-native-llphotoassets@0.0.2",
       "react-native-svg@6.2.1",
       "react-native-exif@0.1.7",
-      "react-native-view-shot@2.3.0"
+      "react-native-view-shot@2.3.0",
+      "react-native-camera@1.0.1"
     ],
     "targetJsDependencies": [
       "react@16.2.0"
@@ -178,7 +179,8 @@
       "react-native-llphotoassets@0.0.2",
       "react-native-svg@6.2.1",
       "react-native-exif@0.1.7",
-      "react-native-view-shot@2.3.0"
+      "react-native-view-shot@2.3.0",
+      "react-native-camera@1.0.1"
     ],
     "targetJsDependencies": [
       "react@16.2.0"
