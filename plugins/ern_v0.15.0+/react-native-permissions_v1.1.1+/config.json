@@ -1,0 +1,15 @@
+{
+  "ios": {
+    "copy": [
+      { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/ReactNativePermissions" }
+    ],
+    "pbxproj": {
+       "addProject": [
+        { "path": "ReactNativePermissions/ReactNativePermissions.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libReactNativePermissions.a", "target": "ReactNativePermissions" } ] }
+      ],
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/ReactNativePermissions/**\""
+      ]
+    }
+  }
+}

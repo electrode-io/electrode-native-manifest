@@ -180,7 +180,9 @@
       "react-native-svg@6.2.2",
       "react-native-exif@0.1.8",
       "react-native-view-shot@2.3.0",
-      "react-native-camera@1.0.2"
+      "react-native-camera@1.0.2",
+      "react-native-permissions@1.1.1"
+
     ],
     "targetJsDependencies": [
       "react@16.3.0-alpha.1"
@@ -202,7 +204,8 @@
       "react-native-svg@6.2.2",
       "react-native-exif@0.1.8",
       "react-native-view-shot@2.3.0",
-      "react-native-camera@1.0.2"
+      "react-native-camera@1.0.2",
+      "react-native-permissions@1.1.1"
     ],
     "targetJsDependencies": [
       "react@16.3.0-alpha.1"
