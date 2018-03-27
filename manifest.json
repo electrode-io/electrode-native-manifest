@@ -205,7 +205,8 @@
       "react-native-exif@0.1.8",
       "react-native-view-shot@2.3.0",
       "react-native-camera@1.0.2",
-      "react-native-permissions@1.1.1"
+      "react-native-permissions@1.1.1",
+      "react-native-fbsdk@0.7.0"
 
     ],
     "targetJsDependencies": [
@@ -231,7 +232,8 @@
       "react-native-camera@1.0.2",
       "react-native-permissions@1.1.1",
       "react-native-keep-awake@3.0.0",
-      "react-native-location@0.27.0"
+      "react-native-location@0.27.0",
+      "react-native-fbsdk@0.7.0"
     ],
     "targetJsDependencies": [
       "react@16.3.0-alpha.1"
