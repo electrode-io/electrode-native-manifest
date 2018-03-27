@@ -11,6 +11,12 @@
       { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/RCTFBSDK" }
     ],
     "pbxproj": {
+      "addFrameworkReference": [
+          "../../../../Documents/FacebookSDK/Bolts.framework",
+          "../../../../Documents/FacebookSDK/FBSDKCoreKit.framework",
+          "../../../../Documents/FacebookSDK/FBSDKLoginKit.framework",
+          "../../../../Documents/FacebookSDK/FBSDKShareKit.framework"
+        ],
        "addProject": [
         { "path": "RCTFBSDK/RCTFBSDK.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libRCTFBSDK.a", "target": "RCTFBSDK" } ] }
       ],
