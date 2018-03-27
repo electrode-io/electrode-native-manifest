@@ -96,8 +96,7 @@
       "react-native-android-settings-library@1.0.3",
       "react-native-llimageview@0.0.7",
       "react-native-lluploader@0.1.0",
-      "react-native-llphotoassets@0.0.2",
-      "react-native-fbsdk@0.7.0"
+      "react-native-llphotoassets@0.0.2"
     ],
     "targetJsDependencies": [
       "react@16.0.0"
