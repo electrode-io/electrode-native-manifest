@@ -1,10 +1,13 @@
 {
   "android": {
-    "moduleName": "app"
+    "moduleName": "app",
+    "dependencies": [
+      "com.nimbusds:nimbus-jose-jwt:5.1"
+    ]
   },
   "ios": {
     "copy": [
-      { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/CodePush" }
+      { "source": "ios/*", "dest": "{{{projectName}}}/Libraries/CodePush" }
     ],
     "pbxproj": {
       "addStaticLibrary": [

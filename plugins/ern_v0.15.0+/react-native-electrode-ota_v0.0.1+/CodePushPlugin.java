@@ -2,31 +2,30 @@ package com.walmartlabs.ern.container.plugins;
 
 import android.app.Application;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
+import com.facebook.react.ReactInstanceManagerBuilder;
 import com.facebook.react.ReactPackage;
 import com.microsoft.codepush.react.CodePush;
 
 public class CodePushPlugin implements ReactPlugin<CodePushPlugin.Config> {
 
-    @Override
-    public ReactPackage hook(@NonNull Application application, @Nullable Config config) {
-        if (config == null) {
-            throw new IllegalArgumentException("Config cannot be null");
-        }
-
+    public ReactPackage hook(@NonNull Application application ,
+                     @NonNull Config config) {
+       if (config == null) {
+           throw new IllegalArgumentException("Config cannot be null");
+       }
         CodePush codePush = null;
         if (null != config.serverUrl) {
             codePush = new CodePush(
-                    config.deploymentKey,
-                    application,
-                    config.isDebugModeEnabled,
-                    config.serverUrl);
+                          config.deploymentKey,
+                          application,
+                          config.isDebugModeEnabled,
+                          config.serverUrl);
         } else {
             codePush = new CodePush(
-                    config.deploymentKey,
-                    application,
-                    config.isDebugModeEnabled);
+                          config.deploymentKey,
+                          application,
+                          config.isDebugModeEnabled);
         }
 
         return codePush;
