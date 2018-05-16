@@ -19,6 +19,9 @@
       "addHeaderSearchPath": [
         "\"$(SRCROOT)/{{{projectName}}}/Libraries/AirMaps/**\""
       ]
-    }
+    },
+    "replaceInFile": [
+      {"path": "{{{projectName}}}/Libraries/AirMaps/AirMaps.xcodeproj/project.pbxproj", "string": "IPHONEOS_DEPLOYMENT_TARGET = 7.0;", "replaceWith": "EXCLUDED_SOURCE_FILE_NAMES = \"AirGoogleMaps/*\";\n\t\t\t\tIPHONEOS_DEPLOYMENT_TARGET = 7.0;"} 
+    ]
   }
 }
