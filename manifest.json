@@ -240,6 +240,33 @@
     ]
   },
   {
+    "platformVersion": "0.18.x",
+    "targetNativeDependencies": [
+      "react-native@0.55.3",
+      "react-native-electrode-bridge@1.5.15",
+      "react-native-maps@0.21.0",
+      "react-native-vector-icons@4.6.0",
+      "react-native-linear-gradient@2.4.0",
+      "react-native-code-push@5.3.2",
+      "react-native-android-settings-library@1.0.4",
+      "react-native-llimageview@0.0.11",
+      "react-native-lluploader@0.1.5",
+      "react-native-llphotoassets@0.0.3",
+      "react-native-svg@6.3.1",
+      "react-native-exif@0.1.8",
+      "react-native-view-shot@2.3.0",
+      "react-native-camera@1.1.1",
+      "react-native-permissions@1.1.1",
+      "react-native-keep-awake@3.0.1",
+      "react-native-location@0.27.0",
+      "react-native-fbsdk@0.7.0",
+      "react-native-electrode-ota@0.0.1"
+    ],
+    "targetJsDependencies": [
+      "react@16.3.1"
+    ]
+  },
+  {
     "platformVersion": "1000.0.0",
     "targetNativeDependencies": [
       "react-native@0.55.3",
