@@ -16,6 +16,7 @@
       { "source": "Libraries/WebSocket", "dest": "{{{projectName}}}/Libraries/ReactNative" },
       { "source": "Libraries/CameraRoll", "dest": "{{{projectName}}}/Libraries/ReactNative" },
       { "source": "Libraries/fishhook", "dest": "{{{projectName}}}/Libraries/ReactNative" },
+      { "source": "Libraries/ART", "dest": "{{{projectName}}}/Libraries/ReactNative" },
       { "source": "scripts", "dest": "{{{projectName}}}/Libraries/ReactNative" }
     ],
     "replaceInFile": [
@@ -47,7 +48,8 @@
         { "path": "ReactNative/Network/RCTNetwork.xcodeproj", "group": "ReactNative", "staticLibs": [ { "name": "libRCTNetwork.a", "target": "RCTNetwork" } ] },
         { "path": "ReactNative/Settings/RCTSettings.xcodeproj", "group": "ReactNative", "staticLibs": [ { "name": "libRCTSettings.a", "target": "RCTSettings" } ] },
         { "path": "ReactNative/Vibration/RCTVibration.xcodeproj", "group": "ReactNative", "staticLibs": [ { "name": "libRCTVibration.a", "target": "RCTVibration" } ] },
-        { "path": "ReactNative/CameraRoll/RCTCameraRoll.xcodeproj", "group": "ReactNative", "staticLibs": [ { "name": "libRCTCameraRoll.a", "target": "RCTCameraRoll" } ] }
+        { "path": "ReactNative/CameraRoll/RCTCameraRoll.xcodeproj", "group": "ReactNative", "staticLibs": [ { "name": "libRCTCameraRoll.a", "target": "RCTCameraRoll" } ] },
+        { "path": "ReactNative/ART/ART.xcodeproj", "group": "ReactNative", "staticLibs": [ { "name": "libART.a", "target": "ART" } ] }
       ]
     }
   }
