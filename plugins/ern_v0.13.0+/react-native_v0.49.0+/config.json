@@ -3,7 +3,6 @@
      "copy": [
       { "source": "React", "dest": "{{{projectName}}}/Libraries/ReactNative" },
       { "source": "ReactCommon", "dest": "{{{projectName}}}/Libraries/ReactNative" },         
-      { "source": "Libraries/ART", "dest": "{{{projectName}}}/Libraries/ReactNative" },
       { "source": "Libraries/PushNotificationIOS", "dest": "{{{projectName}}}/Libraries/ReactNative" },
       { "source": "Libraries/ActionSheetIOS", "dest": "{{{projectName}}}/Libraries/ReactNative" },
       { "source": "Libraries/NativeAnimation", "dest": "{{{projectName}}}/Libraries/ReactNative" },
@@ -37,7 +36,6 @@
     ],
     "pbxproj": {
       "addProject": [
-        { "path": "ReactNative/ART/ART.xcodeproj", "group": "ReactNative", "staticLibs": [ { "name": "libART.a", "target": "React" } ] },
         { "path": "ReactNative/React/React.xcodeproj", "group": "ReactNative", "staticLibs": [ { "name": "libReact.a", "target": "React" } ] },
         { "path": "ReactNative/ActionSheetIOS/RCTActionSheet.xcodeproj", "group": "ReactNative", "staticLibs": [ { "name": "libRCTActionSheet.a", "target": "RCTActionSheet" } ] },
         { "path": "ReactNative/Image/RCTImage.xcodeproj", "group": "ReactNative", "staticLibs": [ { "name": "libRCTImage.a", "target": "RCTImage" } ] },
