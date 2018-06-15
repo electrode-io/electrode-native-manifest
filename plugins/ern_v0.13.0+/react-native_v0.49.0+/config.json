@@ -21,7 +21,7 @@
     ],
     "replaceInFile": [
       { "path": "{{{projectName}}}/Libraries/ReactNative/React/React.xcodeproj/project.pbxproj", "string": "../Libraries", "replaceWith": "../" },
-      { "path": "{{{projectName}}}/Libraries/ReactNative/React/React.xcodeproj/project.pbxproj", "string": "006B79A01A781F38006873D1 /* Start Packager */,", "replaceWith": "" },
+      { "path": "{{{projectName}}}/Libraries/ReactNative/React/React.xcodeproj/project.pbxproj", "string": "006B79A01A781F38006873D1 \/\* Start Packager \*\/,", "replaceWith": "" },
       { "path": "{{{projectName}}}/Libraries/ReactNative/React/Base/RCTBridge.h", "string": "#import <React/RCTDefines.h>", "replaceWith": "#if __has_include(<React/RCTDefines.h>)\n#import <React/RCTDefines.h>\n#elif __has_include(\"RCTDefines.h\")\n#import \"RCTDefines.h\"\n#else\n#import \"React/RCTDefines.h\"\n#endif"},
       { "path": "{{{projectName}}}/Libraries/ReactNative/React/Base/RCTBridge.h", "string": "#import <React/RCTBridgeDelegate.h>", "replaceWith": "#if __has_include(<React/RCTBridgeDelegate.h>)\n#import <React/RCTBridgeDelegate.h>\n#elif __has_include(\"RCTBridgeDelegate.h\")\n#import \"RCTBridgeDelegate.h\"\n#else\n#import \"React/RCTBridgeDelegate.h\"\n#endif"},
       { "path": "{{{projectName}}}/Libraries/ReactNative/React/Base/RCTBridge.h", "string": "#import <React/RCTBridgeModule.h>", "replaceWith": "#if __has_include(<React/RCTBridgeModule.h>)\n#import <React/RCTBridgeModule.h>\n#elif __has_include(\"RCTBridgeModule.h\")\n#import \"RCTBridgeModule.h\"\n#else\n#import \"React/RCTBridgeModule.h\"\n#endif"},
