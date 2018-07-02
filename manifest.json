@@ -288,7 +288,7 @@
       "react-native-location@0.27.0",
       "react-native-fbsdk@0.7.0",
       "react-native-electrode-ota@0.0.1",
-      "react-native-image-picker@0.26.7"
+      "react-native-image-picker@0.26.10"
     ],
     "targetJsDependencies": [
       "react@16.3.1"
@@ -316,7 +316,7 @@
       "react-native-location@0.27.0",
       "react-native-fbsdk@0.7.0",
       "react-native-electrode-ota@0.0.1",
-      "react-native-image-picker@0.26.7"
+      "react-native-image-picker@0.26.10"
     ],
     "targetJsDependencies": [
       "react@16.3.1"
@@ -343,7 +343,8 @@
       "react-native-keep-awake@3.0.1",
       "react-native-location@0.27.0",
       "react-native-fbsdk@0.7.0",
-      "react-native-electrode-ota@0.0.1"
+      "react-native-electrode-ota@0.0.1",
+      "react-native-image-picker@0.26.10"
     ],
     "targetJsDependencies": [
       "react@16.3.1"
