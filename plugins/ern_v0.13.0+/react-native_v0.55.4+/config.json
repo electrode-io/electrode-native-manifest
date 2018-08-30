@@ -37,7 +37,8 @@
         { "path": "{{{projectName}}}/Libraries/ReactNative/React/Base/RCTBridgeModule.h", "string": "#import <React/RCTDefines.h>", "replaceWith": "#if __has_include(<React/RCTDefines.h>)\n#import <React/RCTDefines.h>\n#elif __has_include(\"RCTDefines.h\")\n#import \"RCTDefines.h\"\n#else\n#import \"React/RCTDefines.h\"\n#endif"},
         { "path": "{{{projectName}}}/Libraries/ReactNative/React/Base/RCTJavaScriptLoader.h", "string": "#import <React/RCTDefines.h>", "replaceWith": "#if __has_include(<React/RCTDefines.h>)\n#import <React/RCTDefines.h>\n#elif __has_include(\"RCTDefines.h\")\n#import \"RCTDefines.h\"\n#else\n#import \"React/RCTDefines.h\"\n#endif"},
         { "path": "{{{projectName}}}/Libraries/ReactNative/React/Base/RCTUtils.h", "string": "#import <React/RCTAssert.h>", "replaceWith": "#if __has_include(<React/RCTAssert.h>)\n#import <React/RCTAssert.h>\n#elif __has_include(\"RCTAssert.h\")\n#import \"RCTAssert.h\"\n#else\n#import \"React/RCTAssert.h\"\n#endif"},
-        { "path": "{{{projectName}}}/Libraries/ReactNative/React/Base/RCTUtils.h", "string": "#import <React/RCTDefines.h>", "replaceWith": "#if __has_include(<React/RCTDefines.h>)\n#import <React/RCTDefines.h>\n#elif __has_include(\"RCTDefines.h\")\n#import \"RCTDefines.h\"\n#else\n#import \"React/RCTDefines.h\"\n#endif"}
+        { "path": "{{{projectName}}}/Libraries/ReactNative/React/Base/RCTUtils.h", "string": "#import <React/RCTDefines.h>", "replaceWith": "#if __has_include(<React/RCTDefines.h>)\n#import <React/RCTDefines.h>\n#elif __has_include(\"RCTDefines.h\")\n#import \"RCTDefines.h\"\n#else\n#import \"React/RCTDefines.h\"\n#endif"},
+        { "path": "{{{projectName}}}/Libraries/ReactNative/WebSocket/RCTWebSocket.xcodeproj/project.pbxproj", "string": "13526A511F362F7F0008EF00", "replaceWith": "3DBE0D001F3B181A0099AA32"}
       ],
       "pbxproj": {
         "addProject": [
