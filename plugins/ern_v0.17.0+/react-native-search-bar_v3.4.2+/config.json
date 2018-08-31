@@ -1,0 +1,21 @@
+{
+  "ios": {
+		"copy": [{
+			"source": "ios/**",
+			"dest": "{{{projectName}}}/Libraries/RNSearchBar"
+		}],
+		"pbxproj": {
+			"addProject": [{
+				"path": "RNSearchBar/RNSearchBar.xcodeproj",
+				"group": "Libraries",
+				"staticLibs": [{
+					"name": "libRNSearchBar.a",
+					"target": "RNSearchBar"
+				}]
+			}],
+			"addHeaderSearchPath": [
+				"\"$(SRCROOT)/{{{projectName}}}/Libraries/RNSearchBar/**\""
+			]
+		}
+	}
+}
