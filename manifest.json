@@ -265,7 +265,8 @@
       "react-native-electrode-ota@0.0.1",
       "react-native-image-picker@0.26.10",
       "react-native-search-bar@3.4.2",
-      "react-native-simple-toast@0.0.8"
+      "react-native-simple-toast@0.0.8",
+      "react-native-view-overflow@0.0.3"    
     ],
     "targetJsDependencies": ["react@16.3.1"]
   },
@@ -293,7 +294,8 @@
       "react-native-electrode-ota@0.0.1",
       "react-native-image-picker@0.26.10",
       "react-native-search-bar@3.4.2",
-      "react-native-simple-toast@0.0.8"
+      "react-native-simple-toast@0.0.8",
+      "react-native-view-overflow@0.0.3"
     ],
     "targetJsDependencies": ["react@16.3.1"]
   },
@@ -321,7 +323,8 @@
       "react-native-electrode-ota@0.0.1",
       "react-native-image-picker@0.26.10",
       "react-native-search-bar@3.4.2",
-      "react-native-simple-toast@0.0.8"
+      "react-native-simple-toast@0.0.8",
+      "react-native-view-overflow@0.0.3"
     ],
     "targetJsDependencies": ["react@16.3.1"]
   },
@@ -349,7 +352,8 @@
       "react-native-electrode-ota@0.0.1",
       "react-native-image-picker@0.26.10",
       "react-native-search-bar@3.4.2",
-      "react-native-simple-toast@0.0.8"
+      "react-native-simple-toast@0.0.8",
+      "react-native-view-overflow@0.0.3"
     ],
     "targetJsDependencies": ["react@16.3.1"]
   },
@@ -377,7 +381,8 @@
       "react-native-electrode-ota@0.0.1",
       "react-native-image-picker@0.26.10",
       "react-native-search-bar@3.4.2",
-      "react-native-simple-toast@0.0.8"
+      "react-native-simple-toast@0.0.8",
+      "react-native-view-overflow@0.0.3"
     ],
     "targetJsDependencies": ["react@16.3.1"]
   },
@@ -405,7 +410,8 @@
       "react-native-electrode-ota@0.0.1",
       "react-native-image-picker@0.26.10",
       "react-native-search-bar@3.4.2",
-      "react-native-simple-toast@0.0.8"
+      "react-native-simple-toast@0.0.8",
+      "react-native-view-overflow@0.0.3"
     ],
     "targetJsDependencies": ["react@16.4.1"]
   },
@@ -433,7 +439,8 @@
       "react-native-electrode-ota@0.0.1",
       "react-native-image-picker@0.26.10",
       "react-native-search-bar@3.4.2",
-      "react-native-simple-toast@0.0.8"
+      "react-native-simple-toast@0.0.8",
+      "react-native-view-overflow@0.0.3"
     ],
     "targetJsDependencies": ["react@16.4.1"]
   }
