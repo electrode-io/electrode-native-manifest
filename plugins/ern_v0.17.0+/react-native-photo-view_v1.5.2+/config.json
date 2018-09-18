@@ -1,0 +1,9 @@
+{
+	"android": {
+			"moduleName": "android",
+			"dependencies": [
+				"com.facebook.fresco:fresco:0.11.0",
+				"me.relex:photodraweeview:1.0.0"
+			]
+	  }
+}
