@@ -24,7 +24,7 @@ public class FacebookSdkPlugin implements ReactPlugin<FacebookSdkPlugin.Config> 
         FacebookSdk.setAutoLogAppEventsEnabled(config.autoLogAppEventsEnabled);
         FacebookSdk.setApplicationId(config.appId);
         FacebookSdk.sdkInitialize(application);
-        return new FBSDKPackage(mCallbackManager);;
+        return new FBSDKPackage(mCallbackManager);
     }
     public static class Config implements ReactPluginConfig {
         private String appId;
