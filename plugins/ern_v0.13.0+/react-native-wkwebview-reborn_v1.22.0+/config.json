@@ -1,0 +1,21 @@
+{
+	"ios": {
+		"copy": [{
+			"source": "ios/**",
+			"dest": "{{{projectName}}}/Libraries/RCTWKWebView"
+		}],
+		"pbxproj": {
+			"addProject": [{
+				"path": "RCTWKWebView/RCTWKWebView.xcodeproj",
+				"group": "Libraries",
+				"staticLibs": [{
+					"name": "libRCTWKWebView.a",
+					"target": "RCTWKWebView"
+				}]
+			}],
+			"addHeaderSearchPath": [
+				"\"$(SRCROOT)/{{{projectName}}}/Libraries/RCTWKWebView/**\""
+			]
+		}
+	}
+}

@@ -418,7 +418,8 @@
       "react-native-search-bar@3.4.2",
       "react-native-simple-toast@0.0.8",
       "react-native-view-overflow@0.0.3",
-      "react-native-photo-view@1.5.2"
+      "react-native-photo-view@1.5.2",
+      "react-native-wkwebview-reborn@1.22.0"
     ],
     "targetJsDependencies": ["react@16.4.1"]
   },
@@ -448,7 +449,8 @@
       "react-native-search-bar@3.4.2",
       "react-native-simple-toast@0.0.8",
       "react-native-view-overflow@0.0.3",
-      "react-native-photo-view@1.5.2"
+      "react-native-photo-view@1.5.2",
+      "react-native-wkwebview-reborn@1.22.0"
     ],
     "targetJsDependencies": ["react@16.4.1"]
   }
