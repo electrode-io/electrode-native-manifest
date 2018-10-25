@@ -3,7 +3,7 @@
     "root": "",
     "moduleName": "android",
     "dependencies": [
-      "com.facebook.android:facebook-android-sdk:4.+"
+      "com.facebook.android:facebook-android-sdk:4.37.0"
     ]
   },
   "ios": {
