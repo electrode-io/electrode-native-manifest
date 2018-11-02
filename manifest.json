@@ -396,7 +396,7 @@
     "platformVersion": "0.24.x",
     "targetNativeDependencies": [
       "react-native@0.56.0",
-      "react-native-electrode-bridge@1.5.15",
+      "react-native-electrode-bridge@1.5.16",
       "react-native-maps@0.21.0",
       "react-native-vector-icons@5.0.0",
       "react-native-linear-gradient@2.4.0",
