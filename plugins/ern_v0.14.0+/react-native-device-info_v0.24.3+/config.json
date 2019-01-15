@@ -3,7 +3,7 @@
 		"root": "",
 		"moduleName": "android",
 		"dependencies": [
-			"com.google.android.gms:play-services-gcm:15.0.2"
+			"com.google.android.gms:play-services-gcm:16.0.0"
 		]
 	}
 }
