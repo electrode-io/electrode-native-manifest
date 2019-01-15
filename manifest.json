@@ -574,7 +574,8 @@
       "react-native-simple-toast@0.0.8",
       "react-native-view-overflow@0.0.4",
       "react-native-photo-view@1.5.2",
-      "react-native-wkwebview-reborn@2.0.0"
+      "react-native-wkwebview-reborn@2.0.0",
+      "react-native-device-info@0.24.3"
     ],
     "targetJsDependencies": ["react@16.6.3"]
   }
