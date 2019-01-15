@@ -1,0 +1,9 @@
+{
+	"android": {
+		"root": "",
+		"moduleName": "android",
+		"dependencies": [
+			"com.google.android.gms:play-services-gcm:15.0.2"
+		]
+	}
+}
