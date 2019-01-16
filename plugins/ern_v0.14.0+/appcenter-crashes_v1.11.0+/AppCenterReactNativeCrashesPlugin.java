@@ -6,7 +6,7 @@ import android.support.annotation.Nullable;
 
 import com.facebook.react.ReactInstanceManagerBuilder;
 import com.facebook.react.ReactPackage;
-import com.microsoft.appcenter.reactnative.analytics.AppCenterReactNativeCrashesPackage;
+import com.microsoft.appcenter.reactnative.crashes.AppCenterReactNativeCrashesPackage;
 
 public class AppCenterReactNativeCrashesPlugin implements ReactPlugin<AppCenterReactNativeCrashesPlugin.Config> {
 
