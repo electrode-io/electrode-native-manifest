@@ -3,8 +3,8 @@
     "root": "lib",
     "moduleName": "android",
     "dependencies": [
-      "com.google.android.gms:play-services-base:16.0.0",
-      "com.google.android.gms:play-services-maps:16.0.0",
+      "com.google.android.gms:play-services-base:11.4.0",
+      "com.google.android.gms:play-services-maps:11.4.0",
       "com.google.maps.android:android-maps-utils:0.5+"
     ]
   },
