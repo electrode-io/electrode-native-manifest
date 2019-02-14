@@ -548,7 +548,9 @@
       "react-native-version-number@0.3.4",
       "appcenter-analytics@1.11.0",
       "appcenter@1.11.0",
-      "appcenter-crashes@1.11.0"
+      "appcenter-crashes@1.11.0",
+      "lottie-ios@2.5.0",
+      "lottie-react-native@2.5.11"
     ],
     "targetJsDependencies": ["react@16.6.3"]
   },
@@ -584,7 +586,9 @@
       "react-native-version-number@0.3.4",
       "appcenter-analytics@1.11.0",
       "appcenter@1.11.0",
-      "appcenter-crashes@1.11.0"
+      "appcenter-crashes@1.11.0",
+      "lottie-ios@2.5.0",
+      "lottie-react-native@2.5.11"
     ],
     "targetJsDependencies": ["react@16.6.3"]
   },
@@ -620,7 +624,9 @@
       "react-native-version-number@0.3.4",
       "appcenter-analytics@1.11.0",
       "appcenter@1.11.0",
-      "appcenter-crashes@1.11.0"
+      "appcenter-crashes@1.11.0",
+      "lottie-ios@2.5.0",
+      "lottie-react-native@2.5.11"
     ],
     "targetJsDependencies": ["react@16.6.3"]
   }
