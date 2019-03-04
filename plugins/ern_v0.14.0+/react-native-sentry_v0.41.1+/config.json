@@ -8,7 +8,7 @@
   },
   "ios": {
     "copy": [
-      { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/RNSentry" }
+      { "source": "ios/*", "dest": "{{{projectName}}}/Libraries/RNSentry" }
     ],
     "pbxproj": {
         "addProject": [
