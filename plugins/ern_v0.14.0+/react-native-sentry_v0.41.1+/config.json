@@ -12,7 +12,7 @@
     ],
     "pbxproj": {
         "addProject": [
-        { "path": "RNSentry/RNSentry.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libRNSentry.a.a", "target": "RNSentry" } ] }
+        { "path": "RNSentry/RNSentry.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libRNSentry.a", "target": "RNSentry" } ] }
       ],
       "addHeaderSearchPath": [
         "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNSentry/**\""
