@@ -600,12 +600,12 @@
   {
     "platformVersion": "1000.0.0",
     "targetNativeDependencies": [
-      "react-native@0.57.8",
+      "react-native@0.59.0-rc.3",
       "react-native-electrode-bridge@1.5.16",
-      "react-native-maps@0.22.1",
-      "react-native-vector-icons@6.1.0",
+      "react-native-maps@0.23.0",
+      "react-native-vector-icons@6.3.0",
       "react-native-linear-gradient@2.5.3",
-      "react-native-code-push@5.4.2",
+      "react-native-code-push@5.5.2",
       "react-native-android-settings-library@1.0.5",
       "react-native-llimageview@0.0.11",
       "react-native-lluploader@0.1.5",
@@ -613,20 +613,20 @@
       "react-native-svg@8.0.10",
       "react-native-exif@0.4.0",
       "react-native-view-shot@2.5.0",
-      "react-native-camera@1.6.4",
+      "react-native-camera@1.12.0",
       "react-native-permissions@1.1.1",
       "react-native-keep-awake@4.0.0",
       "react-native-location@1.0.0",
       "react-native-fbsdk@0.8.0",
       "react-native-electrode-ota@0.0.1",
-      "react-native-image-picker@0.27.2",
+      "react-native-image-picker@0.28.0",
       "react-native-search-bar@3.4.2",
       "react-native-simple-toast@0.0.8",
       "react-native-view-overflow@0.0.4",
       "react-native-photo-view@1.5.2",
       "react-native-wkwebview-reborn@2.0.0",
-      "react-native-device-info@0.24.3",
-      "react-native-version-number@0.3.4",
+      "react-native-device-info@0.26.4",
+      "react-native-version-number@0.3.5",
       "appcenter-analytics@1.11.0",
       "appcenter@1.11.0",
       "appcenter-crashes@1.11.0",
@@ -639,6 +639,6 @@
       "react-native-sound@0.10.12",
       "react-native-sentry@0.41.1"
     ],
-    "targetJsDependencies": ["react@16.6.3"]
+    "targetJsDependencies": ["react@16.8.3"]
   }
 ]
