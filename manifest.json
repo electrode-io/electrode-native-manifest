@@ -600,7 +600,7 @@
   {
     "platformVersion": "1000.0.0",
     "targetNativeDependencies": [
-      "react-native@0.59.0-rc.3",
+      "react-native@0.59.0",
       "react-native-electrode-bridge@1.5.16",
       "react-native-maps@0.23.0",
       "react-native-vector-icons@6.3.0",
