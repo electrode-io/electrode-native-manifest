@@ -1,0 +1,7 @@
+{
+  "android": {
+    "root": "",
+    "moduleName": "android",
+    "dependencies": ["com.google.android.gms:play-services-ads:16.0.0"]
+  }
+}
