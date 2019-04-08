@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "",
+    "moduleName": "android"
+  },
+  "ios": {
+    "copy": [
+      {
+        "source": "ios/**",
+        "dest": "{{{projectName}}}/Libraries/RNCSlider"
+      }
+    ],
+    "pbxproj": {
+      "addProject": [
+        {
+          "path": "RNCSlider/RNCSlider.xcodeproj",
+          "group": "Libraries",
+          "staticLibs": [
+            {
+              "name": "libRNCSlider.a",
+              "target": "RNCSlider"
+            }
+          ]
+        }
+      ],
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCSlider/**\""
+      ]
+    }
+  }
+}
