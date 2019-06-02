@@ -5,5 +5,24 @@
 		"dependencies": [
 			"com.google.android.gms:play-services-gcm:16.0.0"
 		]
+	},
+	"ios": {
+		"copy": [{
+			"source": "ios/*",
+			"dest": "{{{projectName}}}/Libraries/RNDeviceInfo"
+		}],
+		"pbxproj": {
+			"addProject": [{
+				"path": "RNDeviceInfo/RNDeviceInfo.xcodeproj",
+				"group": "Libraries",
+				"staticLibs": [{
+					"name": "libRNDeviceInfo.a",
+					"target": "RNDeviceInfo"
+				}]
+			}],
+			"addHeaderSearchPath": [
+				"\"$(SRCROOT)/{{{projectName}}}/Libraries/RNDeviceInfo/**\""
+			]
+		}
 	}
 }
