@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNExitApp",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNExitApp/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNExitApp/RNExitApp.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNExitApp.a",
+              "target": "RNExitApp"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
