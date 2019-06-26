@@ -1,0 +1,40 @@
+{
+  "android": {
+    "root": "",
+    "moduleName": "android"
+  },
+  "ios": {
+    "copy": [
+      {
+        "source": "ios/**",
+        "dest": "{{{projectName}}}/Libraries/RCTSystemSetting"
+      }
+    ],
+    "pbxproj": {
+      "addProject": [
+        {
+          "path": "RCTSystemSetting/RCTSystemSetting.xcodeproj",
+          "group": "Libraries",
+          "staticLibs": [
+            {
+              "name": "libRCTSystemSetting.a",
+              "target": "RCTSystemSetting"
+            }
+          ]
+        }
+      ],
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RCTSystemSetting/**\""
+      ]
+    },
+    "setBuildSettings": [
+      { 
+        "path": "{{{projectName}}}/Libraries/RCTSystemSetting/RCTSystemSetting.xcodeproj/project.pbxproj",
+        "buildSettings": {
+          "configurations": ["Debug", "Release"],
+          "settings": { "GCC_PREPROCESSOR_DEFINITIONS": "BLUETOOTH" }
+        }
+      }
+    ]
+  }
+}
