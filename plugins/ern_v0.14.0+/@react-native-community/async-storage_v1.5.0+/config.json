@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNCAsyncStorage",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCAsyncStorage/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNCAsyncStorage/RNCAsyncStorage.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNCAsyncStorage.a",
+              "target": "RNCAsyncStorage"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
