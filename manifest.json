@@ -877,7 +877,7 @@
       "react-native-admob@2.0.0-beta.5",
       "realm@2.28.1",
       "react-native-fast-image@5.4.2",
-      "@react-native-community/async-storage@1.5.0",
+      "@react-native-community/async-storage@1.6.1",
       "@react-native-community/netinfo@3.2.1"
     ],
     "targetJsDependencies": ["react@16.8.3"]
@@ -926,7 +926,7 @@
       "react-native-admob@2.0.0-beta.5",
       "realm@2.28.1",
       "react-native-fast-image@5.4.2",
-      "@react-native-community/async-storage@1.5.0",
+      "@react-native-community/async-storage@1.6.1",
       "@react-native-community/netinfo@3.2.1"
     ],
     "targetJsDependencies": ["react@16.8.3"]
@@ -975,7 +975,7 @@
       "react-native-admob@2.0.0-beta.5",
       "realm@2.28.1",
       "react-native-fast-image@5.4.2",
-      "@react-native-community/async-storage@1.5.0",
+      "@react-native-community/async-storage@1.6.1",
       "@react-native-community/netinfo@3.2.1"
     ],
     "targetJsDependencies": ["react@16.8.3"]
