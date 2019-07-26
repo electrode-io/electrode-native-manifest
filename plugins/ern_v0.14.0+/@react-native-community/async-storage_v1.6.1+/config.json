@@ -3,7 +3,8 @@
     "root": "android",
     "dependencies": [],
     "replaceInFile": [
-      { "path": "lib/src/main/java/com/reactnativecommunity/asyncstorage/ReactDatabaseSupplier.java", "string": "BuildConfig.AsyncStorage_db_size", "replaceWith": "6L" }
+      { "path": "lib/src/main/java/com/reactnativecommunity/asyncstorage/ReactDatabaseSupplier.java", "string": "BuildConfig.AsyncStorage_db_size", "replaceWith": "6L" },
+      { "path": "lib/src/main/java/com/reactnativecommunity/asyncstorage/AsyncStorageModule.java", "string": "BuildConfig.AsyncStorage_useDedicatedExecutor", "replaceWith": true }
     ]
   },
   "ios": {
