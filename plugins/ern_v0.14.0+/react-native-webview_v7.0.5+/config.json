@@ -1,0 +1,33 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [
+      "org.jetbrains.kotlin:kotlin-stdlib:1.3.11"
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNCWebView",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCWebView/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNCWebView/RNCWebView.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNCWebView.a",
+              "target": "RNCWebView"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
