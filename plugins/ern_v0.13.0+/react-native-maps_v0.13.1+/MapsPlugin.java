@@ -9,7 +9,6 @@ import com.facebook.react.ReactPackage;
 import com.airbnb.android.react.maps.MapsPackage;
 
 public class MapsPlugin implements ReactPlugin {
-
     public ReactPackage hook(@NonNull Application application,
                      @Nullable ReactPluginConfig config) {
         return new MapsPackage();

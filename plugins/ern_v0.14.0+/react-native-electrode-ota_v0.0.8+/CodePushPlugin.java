@@ -9,7 +9,6 @@ import com.microsoft.codepush.react.CodePush;
 import com.microsoft.codepush.react.CodePushBuilder;
 
 public class CodePushPlugin implements ReactPlugin<CodePushPlugin.Config> {
-
     public ReactPackage hook(@NonNull Application application ,
                      @NonNull Config config) {
        if (config == null) {
@@ -21,7 +20,6 @@ public class CodePushPlugin implements ReactPlugin<CodePushPlugin.Config> {
             .setBundleDiff(null != config.bundleDiff ? config.bundleDiff : null)
             .setBundleFileName(null != config.bundleFileName ? config.bundleFileName : null)
             .build();
-
         return codePush;
     }
 

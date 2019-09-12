@@ -8,7 +8,6 @@ import com.facebook.react.ReactPackage;
 import com.imagepicker.ImagePickerPackage;
 
 public class ImagePickerPlugin implements ReactPlugin<ImagePickerPlugin.Config> {
-
     public ReactPackage hook(@NonNull Application application,
                       @Nullable Config config) {
         ImagePickerPackage imagepicker = null;

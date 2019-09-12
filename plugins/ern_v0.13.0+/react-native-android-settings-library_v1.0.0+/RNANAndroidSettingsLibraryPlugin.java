@@ -9,7 +9,6 @@ import com.facebook.react.ReactPackage;
 import com.reactlibrary.androidsettings.RNANAndroidSettingsLibraryPackage;
 
 public class RNANAndroidSettingsLibraryPlugin implements ReactPlugin {
-
     public ReactPackage hook(@NonNull Application application, @Nullable ReactPluginConfig config) {
         return new RNANAndroidSettingsLibraryPackage();
     }

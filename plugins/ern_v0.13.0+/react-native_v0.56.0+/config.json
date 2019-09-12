@@ -2,7 +2,7 @@
   "ios": {
      "copy": [
       { "source": "React", "dest": "{{{projectName}}}/Libraries/ReactNative" },
-      { "source": "ReactCommon", "dest": "{{{projectName}}}/Libraries/ReactNative" },         
+      { "source": "ReactCommon", "dest": "{{{projectName}}}/Libraries/ReactNative" },
       { "source": "Libraries/PushNotificationIOS", "dest": "{{{projectName}}}/Libraries/ReactNative" },
       { "source": "Libraries/ActionSheetIOS", "dest": "{{{projectName}}}/Libraries/ReactNative" },
       { "source": "Libraries/NativeAnimation", "dest": "{{{projectName}}}/Libraries/ReactNative" },
@@ -58,4 +58,3 @@
     }
   }
 }
-

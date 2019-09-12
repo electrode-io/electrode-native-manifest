@@ -9,10 +9,8 @@ import com.facebook.react.ReactPackage;
 import com.microsoft.appcenter.reactnative.crashes.AppCenterReactNativeCrashesPackage;
 
 public class AppCenterReactNativeCrashesPlugin implements ReactPlugin<AppCenterReactNativeCrashesPlugin.Config> {
-
     public ReactPackage hook(@NonNull Application application,
                              @Nullable Config config) {
-
         return new AppCenterReactNativeCrashesPackage(application, config != null ? config.automaticCrashDispatchByJs : null);
     }
 

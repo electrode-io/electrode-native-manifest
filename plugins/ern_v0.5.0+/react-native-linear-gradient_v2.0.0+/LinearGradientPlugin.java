@@ -8,7 +8,6 @@ import com.facebook.react.ReactPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
 
 public class LinearGradientPlugin {
-
     public ReactPackage hook(@NonNull Application application,
                      @NonNull ReactInstanceManagerBuilder reactInstanceManagerBuilder) {
         LinearGradientPackage linearGradientPackage = new LinearGradientPackage();

@@ -9,7 +9,6 @@ import com.facebook.react.ReactPackage;
 import com.reactnativecommunity.netinfo.NetInfoPackage;
 
 public class NetInfoPlugin implements ReactPlugin {
-
     public ReactPackage hook(@NonNull Application application,
                       @Nullable ReactPluginConfig config) {
         return new NetInfoPackage();

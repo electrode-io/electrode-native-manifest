@@ -9,7 +9,6 @@ import com.facebook.react.ReactPackage;
 import com.pusherman.networkinfo.RNNetworkInfoPackage;
 
 public class NetworkInfoPlugin implements ReactPlugin {
-
     public ReactPackage hook(@NonNull Application application,
                       @Nullable ReactPluginConfig config) {
         return new RNNetworkInfoPackage();

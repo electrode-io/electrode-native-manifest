@@ -9,7 +9,6 @@ import com.facebook.react.ReactPackage;
 import com.devialab.exif.RCTExifPackage;
 
 public class RCTExifPackagePlugin implements ReactPlugin {
-
     public ReactPackage hook(@NonNull Application application,
                       @Nullable ReactPluginConfig config) {
         return new RCTExifPackage();
