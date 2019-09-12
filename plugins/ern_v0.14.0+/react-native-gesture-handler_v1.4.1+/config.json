@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNGestureHandler",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNGestureHandler/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNGestureHandler/RNGestureHandler.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNGestureHandler.a",
+              "target": "RNGestureHandler"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
