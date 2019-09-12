@@ -9,7 +9,6 @@ import com.facebook.react.ReactPackage;
 import com.devstepbcn.wifi.AndroidWifiPackage;
 
 public class AndroidWifiPackagePlugin implements ReactPlugin {
-
     public ReactPackage hook(@NonNull Application application,
                       @Nullable ReactPluginConfig config) {
         return new AndroidWifiPackage();

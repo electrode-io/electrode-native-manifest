@@ -8,7 +8,6 @@ import com.facebook.react.ReactPackage;
 import com.microsoft.codepush.react.CodePush;
 
 public class CodePushPlugin {
-
     public ReactPackage hook(@NonNull Application application ,
                      @NonNull ReactInstanceManagerBuilder reactInstanceManagerBuilder,
                      @NonNull Config config) {

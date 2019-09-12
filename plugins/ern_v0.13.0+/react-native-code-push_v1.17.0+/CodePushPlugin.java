@@ -8,7 +8,6 @@ import com.facebook.react.ReactPackage;
 import com.microsoft.codepush.react.CodePush;
 
 public class CodePushPlugin implements ReactPlugin<CodePushPlugin.Config> {
-
     @Override
     public ReactPackage hook(@NonNull Application application, @Nullable Config config) {
         if (config == null) {

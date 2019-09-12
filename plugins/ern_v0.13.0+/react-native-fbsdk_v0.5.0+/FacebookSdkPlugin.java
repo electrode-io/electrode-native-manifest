@@ -11,7 +11,6 @@ import com.facebook.FacebookSdk;
 import com.facebook.reactnative.androidsdk.FBSDKPackage;
 
 public class FacebookSdkPlugin implements ReactPlugin<FacebookSdkPlugin.Config> {
-
     private static CallbackManager mCallbackManager = CallbackManager.Factory.create();
 
     public static CallbackManager getCallbackManager() {

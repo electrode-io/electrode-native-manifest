@@ -1,25 +1,25 @@
 {
-	"android": {
-		"root": "",
-		"moduleName": "android"
-	},
-	"ios": {
-		"copy": [{
-			"source": "ios/*",
-			"dest": "{{{projectName}}}/Libraries/RNVersionNumber"
-		}],
-		"pbxproj": {
-			"addProject": [{
-				"path": "RNVersionNumber/RNVersionNumber.xcodeproj",
-				"group": "Libraries",
-				"staticLibs": [{
-					"name": "libRNVersionNumber.a",
-					"target": "RNVersionNumber"
-				}]
-			}],
-			"addHeaderSearchPath": [
-				"\"$(SRCROOT)/{{{projectName}}}/Libraries/RNVersionNumber/**\""
-			]
-		}
-	}
+  "android": {
+    "root": "",
+    "moduleName": "android"
+  },
+  "ios": {
+    "copy": [{
+      "source": "ios/*",
+      "dest": "{{{projectName}}}/Libraries/RNVersionNumber"
+    }],
+    "pbxproj": {
+      "addProject": [{
+        "path": "RNVersionNumber/RNVersionNumber.xcodeproj",
+        "group": "Libraries",
+        "staticLibs": [{
+          "name": "libRNVersionNumber.a",
+          "target": "RNVersionNumber"
+        }]
+      }],
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNVersionNumber/**\""
+      ]
+    }
+  }
 }
