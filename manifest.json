@@ -1033,7 +1033,8 @@
       "react-native-fast-image@5.4.2",
       "@react-native-community/async-storage@1.6.1",
       "@react-native-community/netinfo@3.2.1",
-      "@react-native-community/geolocation@2.0.2"
+      "@react-native-community/geolocation@2.0.2",
+      "react-native-webview@7.4.1"
     ],
     "targetJsDependencies": ["react@16.8.6"]
   },
@@ -1084,7 +1085,8 @@
       "react-native-fast-image@5.4.2",
       "@react-native-community/async-storage@1.6.1",
       "@react-native-community/netinfo@3.2.1",
-      "@react-native-community/geolocation@2.0.2"
+      "@react-native-community/geolocation@2.0.2",
+      "react-native-webview@7.4.1"
     ],
     "targetJsDependencies": ["react@16.8.6"]
   }
