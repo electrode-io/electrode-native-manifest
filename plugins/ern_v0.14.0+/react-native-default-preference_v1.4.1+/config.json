@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNDefaultPreference",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNDefaultPreference/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNDefaultPreference/RNDefaultPreference.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNDefaultPreference.a",
+              "target": "RNDefaultPreference"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
