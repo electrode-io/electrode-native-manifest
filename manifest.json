@@ -783,7 +783,8 @@
       "realm@2.27.0",
       "react-native-fast-image@5.3.0",
       "@react-native-community/async-storage@1.5.0",
-      "@react-native-community/netinfo@3.2.1"
+      "@react-native-community/netinfo@3.2.1",
+      "react-native-default-preference@1.4.1"
     ],
     "targetJsDependencies": [
       "react@16.8.3"
@@ -834,7 +835,8 @@
       "realm@2.27.0",
       "react-native-fast-image@5.3.0",
       "@react-native-community/async-storage@1.5.0",
-      "@react-native-community/netinfo@3.2.1"
+      "@react-native-community/netinfo@3.2.1",
+      "react-native-default-preference@1.4.1"
     ],
     "targetJsDependencies": [
       "react@16.8.3"
@@ -885,7 +887,8 @@
       "realm@2.28.1",
       "react-native-fast-image@5.4.2",
       "@react-native-community/async-storage@1.5.0",
-      "@react-native-community/netinfo@3.2.1"
+      "@react-native-community/netinfo@3.2.1",
+      "react-native-default-preference@1.4.1"
     ],
     "targetJsDependencies": [
       "react@16.8.3"
@@ -937,7 +940,8 @@
       "react-native-fast-image@5.4.2",
       "@react-native-community/async-storage@1.6.1",
       "@react-native-community/netinfo@3.2.1",
-      "@react-native-community/geolocation@2.0.2"
+      "@react-native-community/geolocation@2.0.2",
+      "react-native-default-preference@1.4.1"
     ],
     "targetJsDependencies": [
       "react@16.8.3"
@@ -989,7 +993,8 @@
       "react-native-fast-image@5.4.2",
       "@react-native-community/async-storage@1.6.1",
       "@react-native-community/netinfo@3.2.1",
-      "@react-native-community/geolocation@2.0.2"
+      "@react-native-community/geolocation@2.0.2",
+      "react-native-default-preference@1.4.1"
     ],
     "targetJsDependencies": [
       "react@16.8.3"
@@ -1042,7 +1047,8 @@
       "react-native-fast-image@5.4.2",
       "@react-native-community/async-storage@1.6.1",
       "@react-native-community/netinfo@3.2.1",
-      "@react-native-community/geolocation@2.0.2"
+      "@react-native-community/geolocation@2.0.2",
+      "react-native-default-preference@1.4.1"
     ],
     "targetJsDependencies": [
       "react@16.8.3"
@@ -1095,7 +1101,8 @@
       "@react-native-community/async-storage@1.6.1",
       "@react-native-community/netinfo@3.2.1",
       "@react-native-community/geolocation@2.0.2",
-      "react-native-fbsdk@1.0.4"
+      "react-native-fbsdk@1.0.4",
+      "react-native-default-preference@1.4.1"
     ],
     "targetJsDependencies": [
       "react@16.8.6"
