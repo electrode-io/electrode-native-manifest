@@ -9,7 +9,6 @@ import com.facebook.react.ReactPackage;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
 
 public class RNDeviceInfoPlugin implements ReactPlugin {
-
     public ReactPackage hook(@NonNull Application application,
                       @Nullable ReactPluginConfig config) {
         return new RNDeviceInfo();

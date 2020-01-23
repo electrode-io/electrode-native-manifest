@@ -9,7 +9,6 @@ import com.facebook.react.ReactPackage;
 import com.apsl.versionnumber.RNVersionNumberPackage;
 
 public class RNVersionNumberPlugin implements ReactPlugin {
-
     public ReactPackage hook(@NonNull Application application,
                       @Nullable ReactPluginConfig config) {
         return new RNVersionNumberPackage();

@@ -1,24 +1,24 @@
 {
-	"ios": {
-		"copy": [
-			{ "source": "ios/LRDRCTSimpleToast", "dest": "{{{projectName}}}/Libraries/LRDRCTSimpleToast" },
-			{ "source": "ios/LRDRCTSimpleToast.xcodeproj", "dest": "{{{projectName}}}/Libraries/LRDRCTSimpleToast" }
-		],
-		"replaceInFile": [
-			{ "path": "{{{projectName}}}/Libraries/LRDRCTSimpleToast/LRDRCTSimpleToast/LRDRCTSimpleToast.m", "string": "#import \"RCTBridgeModule.h\"", "replaceWith": "#import <React/RCTBridge.h>" }
-		],
-		"pbxproj": {
-			"addProject": [{
-				"path": "LRDRCTSimpleToast/LRDRCTSimpleToast.xcodeproj",
-				"group": "Libraries",
-				"staticLibs": [{
-					"name": "libLRDRCTSimpleToast.a",
-					"target": "LRDRCTSimpleToast"
-				}]
-			}],
-			"addHeaderSearchPath": [
-				"\"$(SRCROOT)/{{{projectName}}}/Libraries/LRDRCTSimpleToast/**\""
-			]
-		}
-	}
+  "ios": {
+    "copy": [
+      { "source": "ios/LRDRCTSimpleToast", "dest": "{{{projectName}}}/Libraries/LRDRCTSimpleToast" },
+      { "source": "ios/LRDRCTSimpleToast.xcodeproj", "dest": "{{{projectName}}}/Libraries/LRDRCTSimpleToast" }
+    ],
+    "replaceInFile": [
+      { "path": "{{{projectName}}}/Libraries/LRDRCTSimpleToast/LRDRCTSimpleToast/LRDRCTSimpleToast.m", "string": "#import \"RCTBridgeModule.h\"", "replaceWith": "#import <React/RCTBridge.h>" }
+    ],
+    "pbxproj": {
+      "addProject": [{
+        "path": "LRDRCTSimpleToast/LRDRCTSimpleToast.xcodeproj",
+        "group": "Libraries",
+        "staticLibs": [{
+          "name": "libLRDRCTSimpleToast.a",
+          "target": "LRDRCTSimpleToast"
+        }]
+      }],
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/LRDRCTSimpleToast/**\""
+      ]
+    }
+  }
 }

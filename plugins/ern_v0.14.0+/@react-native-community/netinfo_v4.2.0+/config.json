@@ -1,0 +1,34 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [],
+    "permissions": [
+      "android.permission.ACCESS_WIFI_STATE"
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNCNetInfo",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCNetInfo/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNCNetInfo/RNCNetInfo.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNCNetInfo.a",
+              "target": "RNCNetInfo"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

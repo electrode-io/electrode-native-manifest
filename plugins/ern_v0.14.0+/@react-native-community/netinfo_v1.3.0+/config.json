@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "",
+    "moduleName": "android"
+  },
+  "ios": {
+    "copy": [
+      {
+        "source": "ios/**",
+        "dest": "{{{projectName}}}/Libraries/RNCNetInfo"
+      }
+    ],
+    "pbxproj": {
+      "addProject": [
+        {
+          "path": "RNCNetInfo/RNCNetInfo.xcodeproj",
+          "group": "Libraries",
+          "staticLibs": [
+            {
+              "name": "libRNCNetInfo.a",
+              "target": "RNCNetInfo"
+            }
+          ]
+        }
+      ],
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCNetInfo/**\""
+      ]
+    }
+  }
+}

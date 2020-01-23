@@ -8,7 +8,6 @@ import com.facebook.react.ReactPackage;
 import com.reactlibrary.androidsettings.RNANAndroidSettingsLibraryPackage;
 
 public class RNANAndroidSettingsLibraryPlugin {
-
     public ReactPackage hook(@NonNull Application application,
                      @NonNull ReactInstanceManagerBuilder reactInstanceManagerBuilder) {
         RNANAndroidSettingsLibraryPackage rnAndroidSetting = new RNANAndroidSettingsLibraryPackage();

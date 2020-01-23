@@ -3,8 +3,8 @@
     "root": "lib",
     "moduleName": "android",
     "dependencies": [
-      "com.google.android.gms:play-services-base:10.2.4",
-      "com.google.android.gms:play-services-maps:10.2.4",
+      "com.google.android.gms:play-services-base:16.0.0",
+      "com.google.android.gms:play-services-maps:16.0.0",
       "com.google.maps.android:android-maps-utils:0.5+"
     ]
   },
@@ -21,7 +21,7 @@
       ]
     },
     "replaceInFile": [
-      {"path": "{{{projectName}}}/Libraries/AirMaps/AirMaps.xcodeproj/project.pbxproj", "string": "IPHONEOS_DEPLOYMENT_TARGET = 7.0;", "replaceWith": "EXCLUDED_SOURCE_FILE_NAMES = \"AirGoogleMaps/*\";\n\t\t\t\tIPHONEOS_DEPLOYMENT_TARGET = 7.0;"} 
+      {"path": "{{{projectName}}}/Libraries/AirMaps/AirMaps.xcodeproj/project.pbxproj", "string": "IPHONEOS_DEPLOYMENT_TARGET = 7.0;", "replaceWith": "EXCLUDED_SOURCE_FILE_NAMES = \"AirGoogleMaps/*\";\n\t\t\t\tIPHONEOS_DEPLOYMENT_TARGET = 7.0;"}
     ]
   }
 }

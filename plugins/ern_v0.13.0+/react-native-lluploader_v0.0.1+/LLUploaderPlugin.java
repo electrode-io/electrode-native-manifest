@@ -9,7 +9,6 @@ import com.facebook.react.ReactPackage;
 import net.livelinktechnology.lluploader.LLUploaderPackage;
 
 public class LLUploaderPlugin implements ReactPlugin {
-
     public ReactPackage hook(@NonNull Application application,
                       @Nullable ReactPluginConfig config) {
         return new LLUploaderPackage();

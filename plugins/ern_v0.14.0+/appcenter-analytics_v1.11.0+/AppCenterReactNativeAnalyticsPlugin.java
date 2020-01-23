@@ -9,7 +9,6 @@ import com.facebook.react.ReactPackage;
 import com.microsoft.appcenter.reactnative.analytics.AppCenterReactNativeAnalyticsPackage;
 
 public class AppCenterReactNativeAnalyticsPlugin implements ReactPlugin<AppCenterReactNativeAnalyticsPlugin.Config> {
-
     public ReactPackage hook(@NonNull Application application,
                              @Nullable Config config) {
         if (config != null && config.enableInJs != null) {

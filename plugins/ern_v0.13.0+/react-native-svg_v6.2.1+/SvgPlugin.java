@@ -9,7 +9,6 @@ import com.facebook.react.ReactPackage;
 import com.horcrux.svg.SvgPackage;
 
 public class SvgPlugin implements ReactPlugin {
-
     public ReactPackage hook(@NonNull Application application, @Nullable ReactPluginConfig config) {
         return new SvgPackage();
     }

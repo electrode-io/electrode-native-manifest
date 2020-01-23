@@ -9,7 +9,6 @@ import com.facebook.react.ReactPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
 
 public class LinearGradientPlugin implements ReactPlugin {
-
     public ReactPackage hook(@NonNull Application application, @Nullable ReactPluginConfig config) {
         return new LinearGradientPackage();
     }

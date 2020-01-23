@@ -1,0 +1,34 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [],
+    "replaceInFile": [
+      { "path": "lib/src/main/java/com/reactnativecommunity/asyncstorage/ReactDatabaseSupplier.java", "string": "BuildConfig.AsyncStorage_db_size", "replaceWith": "6L" }
+    ]
+  },
+  "ios": {
+    "copy": [
+        {"source": "ios/RNCAsyncStorage.h", "dest": "{{{projectName}}}/Libraries/RNCAsyncStorage"},
+        {"source": "ios/RNCAsyncStorage.m", "dest": "{{{projectName}}}/Libraries/RNCAsyncStorage"},
+        {"source": "ios/RNCAsyncStorage.xcodeproj", "dest": "{{{projectName}}}/Libraries/RNCAsyncStorage"},
+        {"source": "ios/RNCAsyncStorageDelegate.h", "dest": "{{{projectName}}}/Libraries/RNCAsyncStorage"}
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCAsyncStorage/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNCAsyncStorage/RNCAsyncStorage.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNCAsyncStorage.a",
+              "target": "RNCAsyncStorage"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

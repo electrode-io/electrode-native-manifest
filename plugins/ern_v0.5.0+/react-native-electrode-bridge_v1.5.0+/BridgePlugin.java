@@ -8,7 +8,6 @@ import com.facebook.react.ReactPackage;
 import com.walmartlabs.electrode.reactnative.bridge.ElectrodeBridgePackage;
 
 public class BridgePlugin {
-
     public ReactPackage hook(@NonNull Application application,
                      @NonNull ReactInstanceManagerBuilder reactInstanceManagerBuilder) {
       ElectrodeBridgePackage electrodeBridgePackage = new ElectrodeBridgePackage();

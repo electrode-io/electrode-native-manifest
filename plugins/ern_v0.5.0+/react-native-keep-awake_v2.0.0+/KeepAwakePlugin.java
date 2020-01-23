@@ -8,7 +8,6 @@ import com.facebook.react.ReactPackage;
 import com.corbt.keepawake.KCKeepAwakePackage;
 
 public class KeepAwakePlugin {
-
     public ReactPackage hook(@NonNull Application application,
                      @NonNull ReactInstanceManagerBuilder reactInstanceManagerBuilder) {
         KCKeepAwakePackage keepAwakePackage = new KCKeepAwakePackage();
