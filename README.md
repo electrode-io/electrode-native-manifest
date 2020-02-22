@@ -10,6 +10,9 @@ in which to store the configuration might look puzzling at first.
 To know which directory to use for a new plugin configuration, just go through
 the following bullet points from top to bottom.
 
+- Does your plugin configuration use `features` directive for Android, or `applyPatch` directive?\
+Use `ern_v0.39.0+`
+
 - Does your plugin configuration use `replaceInFile` directive for Android?\
 Use `ern_v0.34.0+`
 
