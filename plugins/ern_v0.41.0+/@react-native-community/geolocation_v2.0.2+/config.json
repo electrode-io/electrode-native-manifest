@@ -1,0 +1,33 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "react-native@<0.61.0": {
+      "copy": [
+        {
+          "dest": "{{{projectName}}}/Libraries/RNCGeolocation",
+          "source": "ios/**"
+        }
+      ],
+      "pbxproj": {
+        "addHeaderSearchPath": [
+          "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCGeolocation/**\""
+        ],
+        "addProject": [
+          {
+            "group": "Libraries",
+            "path": "RNCGeolocation/RNCGeolocation.xcodeproj",
+            "staticLibs": [
+              {
+                "name": "libRNCGeolocation.a",
+                "target": "RNCGeolocation"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

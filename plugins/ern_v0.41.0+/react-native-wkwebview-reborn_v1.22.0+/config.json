@@ -1,0 +1,23 @@
+{
+  "ios": {
+    "react-native@<0.61.0": {
+      "copy": [{
+        "source": "ios/*",
+        "dest": "{{{projectName}}}/Libraries/RCTWKWebView"
+      }],
+      "pbxproj": {
+        "addProject": [{
+          "path": "RCTWKWebView/RCTWKWebView.xcodeproj",
+          "group": "Libraries",
+          "staticLibs": [{
+            "name": "libRCTWKWebView.a",
+            "target": "RCTWKWebView"
+          }]
+        }],
+        "addHeaderSearchPath": [
+          "\"$(SRCROOT)/{{{projectName}}}/Libraries/RCTWKWebView/**\""
+        ]
+      }
+    }
+  }
+}

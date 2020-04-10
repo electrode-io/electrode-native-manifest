@@ -1,0 +1,23 @@
+{
+  "android": {
+    "moduleName": "app"
+  },
+  "ios": {
+    "react-native@<0.61.0": {
+      "copy": [
+        { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/CodePush" }
+      ],
+      "pbxproj": {
+        "addStaticLibrary": [
+          "libz.tbd"
+        ],
+        "addProject": [
+          { "path": "CodePush/CodePush.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libCodePush.a", "target": "CodePush" } ] }
+        ],
+        "addHeaderSearchPath": [
+          "\"$(SRCROOT)/{{{projectName}}}/Libraries/CodePush/**\""
+        ]
+      }
+    }
+  }
+}

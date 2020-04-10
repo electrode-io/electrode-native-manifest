@@ -1,0 +1,27 @@
+{
+  "android": {
+    "root": "",
+    "moduleName": "android"
+  },
+  "ios": {
+    "react-native@<0.61.0": {
+      "copy": [{
+        "source": "ios/**",
+        "dest": "{{{projectName}}}/Libraries/LLImageView"
+      }],
+      "pbxproj": {
+        "addProject": [{
+          "path": "LLImageView/LLImageView.xcodeproj",
+          "group": "Libraries",
+          "staticLibs": [{
+            "name": "libLLImageView.a",
+            "target": "LLImageView"
+          }]
+        }],
+        "addHeaderSearchPath": [
+          "\"$(SRCROOT)/{{{projectName}}}/Libraries/LLImageView/**\""
+        ]
+      }
+    }
+  }
+}

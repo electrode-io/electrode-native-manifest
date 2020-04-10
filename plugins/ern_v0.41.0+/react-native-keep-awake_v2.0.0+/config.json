@@ -1,0 +1,21 @@
+{
+  "android": {
+    "root": "",
+    "moduleName": "android"
+  },
+  "ios": {
+    "react-native@<0.61.0": {
+      "copy": [
+        { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/KCKeepAwake" }
+      ],
+      "pbxproj": {
+        "addProject": [
+          { "path": "KCKeepAwake/KCKeepAwake.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libKCKeepAwake.a", "target": "KCKeepAwake" } ] }
+        ],
+        "addHeaderSearchPath": [
+          "\"$(SRCROOT)/{{{projectName}}}/Libraries/KCKeepAwake/**\""
+        ]
+      }
+    }
+  }
+}

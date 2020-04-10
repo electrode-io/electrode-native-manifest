@@ -1,0 +1,29 @@
+{
+  "android": {
+    "root": "lib",
+    "moduleName": "android",
+    "dependencies": [
+      "com.google.android.gms:play-services-base:16.0.0",
+      "com.google.android.gms:play-services-maps:16.0.0",
+      "com.google.maps.android:android-maps-utils:0.5+"
+    ]
+  },
+  "ios": {
+    "react-native@<0.61.0": {
+      "copy": [
+        { "source": "lib/ios/**", "dest": "{{{projectName}}}/Libraries/AirMaps" }
+      ],
+      "pbxproj": {
+        "addProject": [
+          { "path": "AirMaps/AirMaps.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libAIRMaps.a", "target": "AirMaps" } ] }
+        ],
+        "addHeaderSearchPath": [
+          "\"$(SRCROOT)/{{{projectName}}}/Libraries/AirMaps/**\""
+        ]
+      },
+      "replaceInFile": [
+        {"path": "{{{projectName}}}/Libraries/AirMaps/AirMaps.xcodeproj/project.pbxproj", "string": "IPHONEOS_DEPLOYMENT_TARGET = 7.0;", "replaceWith": "EXCLUDED_SOURCE_FILE_NAMES = \"AirGoogleMaps/*\";\n\t\t\t\tIPHONEOS_DEPLOYMENT_TARGET = 7.0;"}
+      ]
+    }
+  }
+}

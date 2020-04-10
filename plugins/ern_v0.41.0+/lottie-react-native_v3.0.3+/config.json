@@ -1,0 +1,25 @@
+{
+  "android": {
+    "root": "src",
+    "moduleName": "android",
+    "dependencies": ["com.airbnb.android:lottie:3.0.7"]
+  },
+  "ios": {
+    "react-native@<0.61.0": {
+      "copy": [{
+        "source": "./src/ios/*",
+        "dest": "{{{projectName}}}/Libraries/LottieReactNative"
+      }],
+      "pbxproj": {
+        "addProject": [{
+          "path": "LottieReactNative/LottieReactNative.xcodeproj",
+          "group": "Libraries",
+          "staticLibs": [{
+            "name": "libLottieReactNative.a",
+            "target": "LottieReactNative"
+          }]
+        }]
+      }
+    }
+  }
+}

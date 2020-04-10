@@ -1,0 +1,17 @@
+{
+  "ios": {
+    "react-native@<0.61.0": {
+      "copy": [
+        { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/LLPhotoAssets" }
+      ],
+      "pbxproj": {
+        "addProject": [
+          { "path": "LLPhotoAssets/LLPhotoAssets.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libLLPhotoAssets.a", "target": "LLPhotoAssets" } ] }
+        ],
+        "addHeaderSearchPath": [
+          "\"$(SRCROOT)/{{{projectName}}}/Libraries/LLPhotoAssets/**\""
+        ]
+      }
+    }
+  }
+}
