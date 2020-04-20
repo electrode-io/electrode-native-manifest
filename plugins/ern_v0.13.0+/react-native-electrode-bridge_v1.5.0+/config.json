@@ -3,6 +3,7 @@
     "moduleName": "electrode-reactnative-bridge"
   },
   "ios": {
+    "requiresManualLinking": true,
     "copy": [
       { "source": "ios/ElectrodeReactNativeBridge/*", "dest": "{{{projectName}}}/ElectrodeReactNativeBridge" }
     ],

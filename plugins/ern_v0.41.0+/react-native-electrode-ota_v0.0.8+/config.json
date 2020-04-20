@@ -1,9 +1,0 @@
-{
-  "android": {
-    "moduleName": "app",
-    "dependencies": [
-      "com.nimbusds:nimbus-jose-jwt:5.1",
-      "io.sigpipe:jbsdiff:1.0"
-    ]
-  }
-}
