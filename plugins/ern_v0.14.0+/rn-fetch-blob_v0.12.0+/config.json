@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNFetchBlob",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNFetchBlob/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNFetchBlob/RNFetchBlob.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNFetchBlob.a",
+              "target": "RNFetchBlob"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
