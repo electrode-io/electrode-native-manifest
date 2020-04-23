@@ -1102,7 +1102,8 @@
       "@react-native-community/netinfo@3.2.1",
       "@react-native-community/geolocation@2.0.2",
       "react-native-fbsdk@1.0.4",
-      "react-native-default-preference@1.4.1"
+      "react-native-default-preference@1.4.1",
+      "rn-fetch-blob@0.12.0"
     ],
     "targetJsDependencies": [
       "react@16.8.6"
@@ -1156,7 +1157,8 @@
       "@react-native-community/netinfo@3.2.1",
       "@react-native-community/geolocation@2.0.2",
       "react-native-fbsdk@1.0.4",
-      "react-native-default-preference@1.4.1"
+      "react-native-default-preference@1.4.1",
+      "rn-fetch-blob@0.12.0"
     ],
     "targetJsDependencies": [
       "react@16.8.6"
@@ -1210,7 +1212,8 @@
       "@react-native-community/netinfo@3.2.1",
       "@react-native-community/geolocation@2.0.2",
       "react-native-fbsdk@1.0.4",
-      "react-native-default-preference@1.4.1"
+      "react-native-default-preference@1.4.1",
+      "rn-fetch-blob@0.12.0"
     ],
     "targetJsDependencies": [
       "react@16.8.6"
@@ -1263,7 +1266,8 @@
       "@react-native-community/async-storage@1.6.1",
       "@react-native-community/netinfo@3.2.1",
       "@react-native-community/geolocation@2.0.2",
-      "react-native-fbsdk@1.0.4"
+      "react-native-fbsdk@1.0.4",
+      "rn-fetch-blob@0.12.0"
     ],
     "targetJsDependencies": [
       "react@16.8.6"
