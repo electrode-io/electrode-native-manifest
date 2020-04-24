@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNDateTimePicker",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNDateTimePicker/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNDateTimePicker/RNDateTimePicker.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNDateTimePicker.a",
+              "target": "RNDateTimePicker"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
