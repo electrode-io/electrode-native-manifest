@@ -49,8 +49,13 @@ pbxproj part of the plugin package.
 **Adds a new Android plugin directive: `replaceInFile`:** [#1197][5]\
 This directive allows to replace content in any files included in the Container.
 
+### Electrode Native v0.41 changes
+
+**Adds support for React Native >= 0.61.0:** [#1542][6]\
+
 [1]: https://native.electrode.io/reference/index-3
 [2]: https://developer.android.com/guide/topics/permissions/overview
 [3]: https://github.com/electrode-io/electrode-native/pull/606
 [4]: https://github.com/electrode-io/electrode-native/pull/1196
 [5]: https://github.com/electrode-io/electrode-native/pull/1197
+[6]: https://github.com/electrode-io/electrode-native/pull/1542

@@ -24,6 +24,7 @@
       "addHeaderSearchPath": [
         "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNPhotoView/**\""
       ]
-    }
+    },
+    "podspec": "react-native-photo-view.podspec"
   }
 }
