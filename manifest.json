@@ -1241,7 +1241,7 @@
     ]
   },
   {
-    "platformVersion": "0.41.0",
+    "platformVersion": "0.41.x",
     "targetNativeDependencies": [
       "react-native@0.62.2",
       "react-native-electrode-bridge@1.5.24",
