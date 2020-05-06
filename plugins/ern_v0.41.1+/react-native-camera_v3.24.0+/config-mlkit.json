@@ -1,0 +1,37 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [
+      "com.google.zxing:core:3.3.3",
+      "com.drewnoakes:metadata-extractor:2.11.0",
+      "com.google.firebase:firebase-ml-vision:19.0.3",
+      "com.google.firebase:firebase-ml-vision-face-model:17.0.2",
+      "androidx.exifinterface:exifinterface:1.0.0",
+      "androidx.annotation:annotation:1.0.0",
+      "androidx.legacy:legacy-support-v4:1.0.0"
+    ],
+    "permissions": ["android.permission.CAMERA"],
+    "copy": [
+      {
+        "source": "android/src/mlkit/java/org/*",
+        "dest": "lib/src/main/java/org"
+      },
+      {
+        "source": "android/src/main/res/*",
+        "dest": "lib/src/main/res/camera"
+      }
+    ],
+    "replaceInFile": [
+      {
+        "path": "lib/src/main/java/com/google/android/cameraview/SurfaceViewPreview.java",
+        "string": "org.reactnative.camera.R",
+        "replaceWith": "com.walmartlabs.ern.container.R"
+      },
+      {
+        "path": "lib/src/main/java/com/google/android/cameraview/TextureViewPreview.java",
+        "string": "org.reactnative.camera.R",
+        "replaceWith": "com.walmartlabs.ern.container.R"
+      }
+    ]
+  }
+}
