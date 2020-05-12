@@ -17,6 +17,6 @@ The required `android.permission.CAMERA` is defined in the configuration and wil
 
 Alternatively, you can also override this configuration in your own manifest to add the additional permissions to the `permissions` array of the plugin configuration.
 
-**If you want to use the MLKit flavor rather than the general one** then you should override this configuration in your own manifest and replace the [`config.json`])(./config.json) file with the [`config-mlkit.json`](./config-mlkit.json) file.
+**If you want to use the MLKit flavor rather than the general one** then you should override this configuration in your own manifest and replace the [`config.json`](./config.json) file with the [`config-mlkit.json`](./config-mlkit.json) file.
 
 **If you need other versions of listed dependencies** then you should override this configuration in your own manifest and update the versions at your convenience.
