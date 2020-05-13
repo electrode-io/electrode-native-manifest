@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import com.facebook.react.ReactPackage;
 import org.reactnative.camera.RNCameraPackage;
 
-public class CameraPackagePlugin implements ReactPlugin {
+public class CameraPlugin implements ReactPlugin {
     public ReactPackage hook(@NonNull Application application, @Nullable ReactPluginConfig config) {
         return new RNCameraPackage();
     }
