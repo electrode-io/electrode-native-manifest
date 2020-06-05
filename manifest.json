@@ -1287,9 +1287,9 @@
       "react-native-admob@1.3.2",
       "realm@5.0.3",
       "react-native-fast-image@8.1.5",
-      "react-native-community/async-storage@1.9.0",
-      "react-native-community/netinfo@5.7.0",
-      "react-native-community/geolocation@2.0.2",
+      "@react-native-community/async-storage@1.9.0",
+      "@react-native-community/netinfo@5.7.0",
+      "@react-native-community/geolocation@2.0.2",
       "react-native-fbsdk@1.1.2"
     ],
     "targetJsDependencies": [
@@ -1343,9 +1343,9 @@
       "react-native-admob@1.3.2",
       "realm@5.0.3",
       "react-native-fast-image@8.1.5",
-      "react-native-community/async-storage@1.9.0",
-      "react-native-community/netinfo@5.7.0",
-      "react-native-community/geolocation@2.0.2",
+      "@react-native-community/async-storage@1.9.0",
+      "@react-native-community/netinfo@5.7.0",
+      "@react-native-community/geolocation@2.0.2",
       "react-native-fbsdk@1.1.2"
     ],
     "targetJsDependencies": [
