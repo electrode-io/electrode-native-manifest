@@ -1,0 +1,33 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [
+      "com.yqritc:android-scalablevideoview:1.0.4"
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RCTVideo",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RCTVideo/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RCTVideo/RCTVideo.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRCTVideo.a",
+              "target": "RCTVideo"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
