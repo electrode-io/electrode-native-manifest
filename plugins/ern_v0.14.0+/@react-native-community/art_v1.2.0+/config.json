@@ -1,0 +1,30 @@
+{
+    "android": {
+      "root": "android"
+    },
+    "ios": {
+      "copy": [
+        {
+          "dest": "{{{projectName}}}/Libraries/ART",
+          "source": "ios/**"
+        }
+      ],
+      "pbxproj": {
+        "addHeaderSearchPath": [
+          "\"$(SRCROOT)/{{{projectName}}}/Libraries/ART/**\""
+        ],
+        "addProject": [
+          {
+            "group": "Libraries",
+            "path": "ART/ART.xcodeproj",
+            "staticLibs": [
+              {
+                "name": "libART.a",
+                "target": "ART"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
