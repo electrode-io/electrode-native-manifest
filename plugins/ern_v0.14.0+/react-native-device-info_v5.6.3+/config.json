@@ -1,0 +1,34 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [
+      "com.android.installreferrer:installreferrer:1.1.2",
+      "com.google.android.gms:play-services-iid:17.0.0"
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNDeviceInfo",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNDeviceInfo/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNDeviceInfo/RNDeviceInfo.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNDeviceInfo.a",
+              "target": "RNDeviceInfo"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
