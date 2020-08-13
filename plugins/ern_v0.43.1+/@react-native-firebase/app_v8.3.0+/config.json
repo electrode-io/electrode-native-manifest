@@ -1,0 +1,20 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [
+      "implementation platform('com.google.firebase:firebase-bom:25.5.0')",
+      "com.google.firebase:firebase-core",
+      "com.google.firebase:firebase-common"
+    ],
+    "copy": [
+      {
+        "source": "android/src/reactnative/java/io/*",
+        "dest": "lib/src/main/java/io"
+      }
+    ],
+    "replaceInFile": [
+      { "path": "lib/src/main/java/io/invertase/firebase/common/ReactNativeFirebaseJSON.java", "string": "import io.invertase.firebase.BuildConfig;", "replaceWith": "" },
+      { "path": "lib/src/main/java/io/invertase/firebase/common/ReactNativeFirebaseJSON.java", "string": "BuildConfig.FIREBASE_JSON_RAW", "replaceWith": "\"{}\"" }
+    ]
+  }
+}
