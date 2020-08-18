@@ -10,5 +10,6 @@
         "dest": "lib/src/main/java/io"
       }
     ]
-  }
+  },
+  "ios": {}
 }
