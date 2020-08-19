@@ -1,0 +1,16 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [
+      "com.google.firebase:firebase-crashlytics",
+      "com.google.firebase:firebase-crashlytics-ndk"
+    ]
+  },
+  "ios": {
+    "requiresManualLinking": true,
+    "applyPatch": {
+      "patch": "crashlytics.patch",
+      "root": "node_modules/@react-native-firebase"
+    }
+  }
+}

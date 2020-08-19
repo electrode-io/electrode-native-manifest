@@ -1,0 +1,15 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [
+      "com.google.firebase:firebase-analytics"
+    ],
+    "copy": [
+      {
+        "source": "android/src/reactnative/java/io/*",
+        "dest": "lib/src/main/java/io"
+      }
+    ]
+  },
+  "ios": {}
+}
