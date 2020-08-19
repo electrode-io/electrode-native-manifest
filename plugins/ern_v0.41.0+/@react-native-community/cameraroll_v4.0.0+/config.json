@@ -1,0 +1,28 @@
+{
+  "android": {
+    "root": "android",
+    "permissions": [
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE"
+    ]
+  },
+  "ios": {
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCCameraRoll/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNCCameraRoll/RNCCameraRoll.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNCCameraRoll.a",
+              "target": "RNCCameraRoll"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
