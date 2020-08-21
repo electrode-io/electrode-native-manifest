@@ -2,8 +2,8 @@
   "android": {
     "root": "android",
     "dependencies": [
-      "com.google.firebase:firebase-crashlytics",
-      "com.google.firebase:firebase-crashlytics-ndk"
+      "com.google.firebase:firebase-crashlytics:17.1.0",
+      "com.google.firebase:firebase-crashlytics-ndk:17.1.0"
     ]
   },
   "ios": {
