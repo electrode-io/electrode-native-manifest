@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RSSignatureCapture",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RSSignatureCapture/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RSSignatureCapture/RSSignatureCapture.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRSSignatureCapture.a",
+              "target": "RSSignatureCapture"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
