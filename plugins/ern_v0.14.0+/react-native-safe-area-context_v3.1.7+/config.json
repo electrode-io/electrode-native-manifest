@@ -1,0 +1,32 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "root": "ios",
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNCSafeAreaView",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCSafeAreaView/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNCSafeAreaView/SafeAreaView.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNCSafeAreaContext.a",
+              "target": "RNCSafeAreaContext"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
