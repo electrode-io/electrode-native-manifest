@@ -1,0 +1,49 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [],
+    "copy": [
+      {
+        "dest": "lib/src/main/java/com/swmansion/gesturehandler",
+        "source": "android/lib/*"
+      }
+    ],
+    "replaceInFile": [
+      {
+        "path": "lib/src/main/java/com/walmartlabs/ern/container/ElectrodeReactActivityDelegate.java",
+        "string": "import com.facebook.react.ReactRootView;",
+        "replaceWith": "import com.facebook.react.ReactRootView;\nimport com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;"
+      },
+      {
+        "path": "lib/src/main/java/com/walmartlabs/ern/container/ElectrodeReactActivityDelegate.java",
+        "string": "    }\n}",
+        "replaceWith": "    }\n\n    @Override\n    protected ReactRootView createRootView() {\n        return new RNGestureHandlerEnabledRootView(getContext());\n    }\n}"
+      }
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNGestureHandler",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNGestureHandler/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNGestureHandler/RNGestureHandler.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNGestureHandler.a",
+              "target": "RNGestureHandler"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
