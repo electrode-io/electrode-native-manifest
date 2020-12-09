@@ -1,0 +1,35 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [
+      "androidx.lifecycle:lifecycle-extensions:2.0.0",
+      "com.squareup.okhttp3:okhttp:3.12.1",
+      "com.snowplowanalytics:snowplow-android-tracker:1.5.+"
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNSnowplowTracker",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNSnowplowTracker/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNSnowplowTracker/RNSnowplowTracker.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNSnowplowTracker.a",
+              "target": "RNSnowplowTracker"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
