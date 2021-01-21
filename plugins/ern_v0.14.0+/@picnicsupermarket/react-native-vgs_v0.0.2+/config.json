@@ -1,0 +1,27 @@
+{
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/Vgs",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/Vgs/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "Vgs/Vgs.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libVgs.a",
+              "target": "Vgs"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
