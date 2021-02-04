@@ -52,9 +52,9 @@ pbxproj part of the plugin package.
 **Adds a new Android plugin directive: `replaceInFile`:** [#1197][5]\
 This directive allows to replace content in any files included in the Container.
 
-## Electrode Native v0.39 changes
+### Electrode Native v0.39 changes
 
-**- Add support of `addEmbeddedFramework` directive for iOS** [#1478][6]\
+**Adds support of `addEmbeddedFramework` directive for iOS** [#1478][6]\
 This directive allows to add an embedded Framework to the container project.
 
 ### Electrode Native v0.41 changes
