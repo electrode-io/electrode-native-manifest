@@ -1476,6 +1476,7 @@
     "targetNativeDependencies": [
       "@react-native-community/async-storage@1.9.0",
       "@react-native-community/cameraroll@1.1.2",
+      "@react-native-community/clipboard@1.2.3",
       "@react-native-community/datetimepicker@2.3.2",
       "@react-native-community/geolocation@2.0.2",
       "@react-native-community/masked-view@0.1.10",
@@ -1540,6 +1541,7 @@
     "targetNativeDependencies": [
       "@react-native-community/async-storage@1.9.0",
       "@react-native-community/cameraroll@1.1.2",
+      "@react-native-community/clipboard@1.2.3",
       "@react-native-community/datetimepicker@2.3.2",
       "@react-native-community/geolocation@2.0.2",
       "@react-native-community/masked-view@0.1.10",
