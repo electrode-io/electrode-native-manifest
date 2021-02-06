@@ -1,0 +1,35 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [
+      "androidx.coordinatorlayout:coordinatorlayout:1.1.0",
+      "androidx.fragment:fragment:1.2.1",
+      "com.google.android.material:material:1.1.0"
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNScreens",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNScreens/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNScreens/RNScreens.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNScreens.a",
+              "target": "RNScreens"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
