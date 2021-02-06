@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/SafeAreaView",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/SafeAreaView/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "SafeAreaView/SafeAreaView.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libSafeAreaView.a",
+              "target": "SafeAreaView"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
