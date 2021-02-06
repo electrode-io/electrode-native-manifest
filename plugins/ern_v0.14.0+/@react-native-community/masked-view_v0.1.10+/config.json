@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNCMaskedView",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCMaskedView/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNCMaskedView/RNCMaskedView.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNCMaskedView.a",
+              "target": "RNCMaskedView"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
