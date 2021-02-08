@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNCProgressBar",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCProgressBar/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNCProgressBar/RNCProgressBar.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNCProgressBar.a",
+              "target": "RNCProgressBar"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
