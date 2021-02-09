@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNCClipboard",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCClipboard/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNCClipboard/RNCClipboard.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNCClipboard.a",
+              "target": "RNCClipboard"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNCProgressView",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCProgressView/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNCProgressView/RNCProgressView.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNCProgressView.a",
+              "target": "RNCProgressView"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
