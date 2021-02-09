@@ -1,0 +1,33 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [
+      "com.microsoft.identity.client:msal:1.4.+"
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNMSAL",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNMSAL/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNMSAL/RNMSAL.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNMSAL.a",
+              "target": "RNMSAL"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
