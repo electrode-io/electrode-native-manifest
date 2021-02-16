@@ -5,6 +5,10 @@ require_relative '{{{nodeModulesRelativePath}}}/@react-native-community/cli-plat
 {{{.}}}
 {{/extraPodspecsSources}}
 
+{{#extraPodfileStatements}}
+{{{.}}}
+{{/extraPodfileStatements}}
+
 target '{{{projectName}}}' do
   # Pods for {{{projectName}}}
   pod 'FBLazyVector', :path => "{{{nodeModulesRelativePath}}}/react-native/Libraries/FBLazyVector"
