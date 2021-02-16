@@ -1,6 +1,10 @@
 platform :ios, '{{{iosDeploymentTarget}}}'
 require_relative '{{{nodeModulesRelativePath}}}/@react-native-community/cli-platform-ios/native_modules'
 
+{{#extraPodspecsSources}}
+{{{.}}}
+{{/extraPodspecsSources}}
+
 target '{{{projectName}}}' do
   # Pods for {{{projectName}}}
   pod 'FBLazyVector', :path => "{{{nodeModulesRelativePath}}}/react-native/Libraries/FBLazyVector"
