@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNPermissions",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNPermissions/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNPermissions/RNPermissions.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNPermissions.a",
+              "target": "RNPermissions"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
