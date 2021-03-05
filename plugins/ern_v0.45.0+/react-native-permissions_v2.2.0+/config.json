@@ -1,0 +1,14 @@
+{
+  "android": {
+    "root": "",
+    "moduleName": "android"
+  },
+  "ios": {
+    "extraPods": [
+      "pod 'Permission-Camera', :path => 'node_modules/react-native-permissions/ios/Camera.podspec'",
+      "pod 'Permission-LocationAlways', :path => 'node_modules/react-native-permissions/ios/LocationAlways.podspec'",
+      "pod 'Permission-LocationWhenInUse', :path => 'node_modules/react-native-permissions/ios/LocationWhenInUse.podspec'",
+      "pod 'Permission-Microphone', :path => 'node_modules/react-native-permissions/ios/Microphone.podspec'"
+    ]
+  }
+}
