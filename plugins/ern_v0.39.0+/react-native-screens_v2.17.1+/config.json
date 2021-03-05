@@ -13,6 +13,13 @@
         "source": "android/src/main/res/*",
         "dest": "lib/src/main/res/screens"
       }
+    ],
+    "replaceInFile": [
+      {
+        "path": "lib/src/main/java/com/swmansion/rnscreens/ScreenStack.java",
+        "string": "public class ScreenStack extends ScreenContainer<ScreenStackFragment> {",
+        "replaceWith": "import com.walmartlabs.ern.container.R;\n\npublic class ScreenStack extends ScreenContainer<ScreenStackFragment> {"
+      }
     ]
   },
   "ios": {
