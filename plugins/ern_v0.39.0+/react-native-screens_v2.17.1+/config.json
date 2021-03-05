@@ -19,6 +19,11 @@
         "path": "lib/src/main/java/com/swmansion/rnscreens/ScreenStack.java",
         "string": "public class ScreenStack extends ScreenContainer<ScreenStackFragment> {",
         "replaceWith": "import com.walmartlabs.ern.container.R;\n\npublic class ScreenStack extends ScreenContainer<ScreenStackFragment> {"
+      },
+      {
+        "path": "lib/src/main/java/com/swmansion/rnscreens/ScreenStackHeaderConfig.java",
+        "string": "public class ScreenStackHeaderConfig extends ViewGroup {",
+        "replaceWith": "import com.facebook.react.BuildConfig;\n\npublic class ScreenStackHeaderConfig extends ViewGroup {"
       }
     ]
   },
