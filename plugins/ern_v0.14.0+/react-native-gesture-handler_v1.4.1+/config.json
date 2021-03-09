@@ -1,6 +1,12 @@
 {
   "android": {
     "root": "android",
+    "copy": [
+      {
+        "source": "android/lib/src/main/java/com/swmansion/gesturehandler/*",
+        "dest": "lib/src/main/java/com/swmansion/gesturehandler"
+      }
+    ],
     "dependencies": []
   },
   "ios": {
