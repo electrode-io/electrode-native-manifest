@@ -1,0 +1,55 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [
+      "androidx.appcompat:appcompat:1.1.0",
+      "androidx.coordinatorlayout:coordinatorlayout:1.1.0",
+      "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0",
+      "androidx.fragment:fragment:1.2.1",
+      "com.google.android.material:material:1.1.0"
+    ],
+    "copy": [
+      {
+        "source": "android/src/main/res/*",
+        "dest": "lib/src/main/res/screens"
+      }
+    ],
+    "replaceInFile": [
+      {
+        "path": "lib/src/main/java/com/swmansion/rnscreens/ScreenStack.java",
+        "string": "R.anim",
+        "replaceWith": "com.walmartlabs.ern.container.R.anim"
+      },
+      {
+        "path": "lib/src/main/java/com/swmansion/rnscreens/ScreenStackHeaderConfig.java",
+        "string": "BuildConfig.DEBUG",
+        "replaceWith": "false"
+      }
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNScreens",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNScreens/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNScreens/RNScreens.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNScreens.a",
+              "target": "RNScreens"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
