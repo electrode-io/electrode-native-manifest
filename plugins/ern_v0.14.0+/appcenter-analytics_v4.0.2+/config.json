@@ -1,0 +1,10 @@
+{
+  "android": {
+    "root": "",
+    "moduleName": "android",
+    "dependencies": [
+      "com.microsoft.appcenter:appcenter-analytics:4.1.0",
+      "com.microsoft.appcenter.reactnative:appcenter-react-native:4.0.2"
+    ]
+  }
+}
