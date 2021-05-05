@@ -1,0 +1,41 @@
+platform :ios, '9.0'
+require_relative '{{{nodeModulesRelativePath}}}/@react-native-community/cli-platform-ios/native_modules'
+
+target '{{{projectName}}}' do
+  # Pods for {{{projectName}}}
+  pod 'FBLazyVector', :path => "{{{nodeModulesRelativePath}}}/react-native/Libraries/FBLazyVector"
+  pod 'FBReactNativeSpec', :path => "{{{nodeModulesRelativePath}}}/react-native/Libraries/FBReactNativeSpec"
+  pod 'RCTRequired', :path => "{{{nodeModulesRelativePath}}}/react-native/Libraries/RCTRequired"
+  pod 'RCTTypeSafety', :path => "{{{nodeModulesRelativePath}}}/react-native/Libraries/TypeSafety"
+  pod 'React', :path => '{{{nodeModulesRelativePath}}}/react-native/'
+  pod 'React-Core', :path => '{{{nodeModulesRelativePath}}}/react-native/'
+  pod 'React-CoreModules', :path => '{{{nodeModulesRelativePath}}}/react-native/React/CoreModules'
+  pod 'React-Core/DevSupport', :path => '{{{nodeModulesRelativePath}}}/react-native/'
+  pod 'React-RCTActionSheet', :path => '{{{nodeModulesRelativePath}}}/react-native/Libraries/ActionSheetIOS'
+  pod 'React-RCTAnimation', :path => '{{{nodeModulesRelativePath}}}/react-native/Libraries/NativeAnimation'
+  pod 'React-RCTBlob', :path => '{{{nodeModulesRelativePath}}}/react-native/Libraries/Blob'
+  pod 'React-RCTImage', :path => '{{{nodeModulesRelativePath}}}/react-native/Libraries/Image'
+  pod 'React-RCTLinking', :path => '{{{nodeModulesRelativePath}}}/react-native/Libraries/LinkingIOS'
+  pod 'React-RCTNetwork', :path => '{{{nodeModulesRelativePath}}}/react-native/Libraries/Network'
+  pod 'React-RCTSettings', :path => '{{{nodeModulesRelativePath}}}/react-native/Libraries/Settings'
+  pod 'React-RCTText', :path => '{{{nodeModulesRelativePath}}}/react-native/Libraries/Text'
+  pod 'React-RCTVibration', :path => '{{{nodeModulesRelativePath}}}/react-native/Libraries/Vibration'
+  pod 'React-Core/RCTWebSocket', :path => '{{{nodeModulesRelativePath}}}/react-native/'
+
+  pod 'React-cxxreact', :path => '{{{nodeModulesRelativePath}}}/react-native/ReactCommon/cxxreact'
+  pod 'React-jsi', :path => '{{{nodeModulesRelativePath}}}/react-native/ReactCommon/jsi'
+  pod 'React-jsiexecutor', :path => '{{{nodeModulesRelativePath}}}/react-native/ReactCommon/jsiexecutor'
+  pod 'React-jsinspector', :path => '{{{nodeModulesRelativePath}}}/react-native/ReactCommon/jsinspector'
+  pod 'ReactCommon/callinvoker', :path => "{{{nodeModulesRelativePath}}}/react-native/ReactCommon"
+  pod 'ReactCommon/turbomodule/core', :path => "{{{nodeModulesRelativePath}}}/react-native/ReactCommon"
+  pod 'Yoga', :path => '{{{nodeModulesRelativePath}}}/react-native/ReactCommon/yoga', :modular_headers => true
+
+  pod 'DoubleConversion', :podspec => '{{{nodeModulesRelativePath}}}/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '{{{nodeModulesRelativePath}}}/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '{{{nodeModulesRelativePath}}}/react-native/third-party-podspecs/Folly.podspec'
+
+  {{{extraPods}}}
+
+  use_native_modules!
+
+end

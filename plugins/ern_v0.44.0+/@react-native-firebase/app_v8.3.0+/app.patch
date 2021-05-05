@@ -1,0 +1,24 @@
+diff --git a/app/react-native.config.js b/app/react-native.config.js
+deleted file mode 100644
+index 769591f..0000000
+--- a/app/react-native.config.js
++++ /dev/null
+@@ -1,18 +0,0 @@
+-module.exports = {
+-  dependency: {
+-    platforms: {
+-      android: {
+-        packageImportPath: 'import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;',
+-      },
+-      ios: {
+-        scriptPhases: [
+-          {
+-            name: '[RNFB] Core Configuration',
+-            path: './ios_config.sh',
+-            execution_position: 'after_compile',
+-          },
+-        ],
+-      },
+-    },
+-  },
+-};

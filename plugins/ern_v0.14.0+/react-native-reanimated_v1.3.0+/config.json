@@ -1,0 +1,33 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [
+      "androidx.transition:transition:1.1.0"
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNReanimated",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNReanimated/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNReanimated/RNReanimated.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNReanimated.a",
+              "target": "RNReanimated"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

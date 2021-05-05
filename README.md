@@ -10,6 +10,12 @@ in which to store the configuration might look puzzling at first.
 To know which directory to use for a new plugin configuration, just go through
 the following bullet points from top to bottom.
 
+- Does your plugin configuration need to add Android resources (from a `res` directory) to the container or to add iOS resources to the container ?\
+Use `ern_v0.41.1+`
+
+- Does your plugin configuration use `features` directive for Android, `addEmbeddedFramework` directive for iOS, or `applyPatch` directive?\
+Use `ern_v0.39.0+`
+
 - Does your plugin configuration use `replaceInFile` directive for Android?\
 Use `ern_v0.34.0+`
 
@@ -46,8 +52,19 @@ pbxproj part of the plugin package.
 **Adds a new Android plugin directive: `replaceInFile`:** [#1197][5]\
 This directive allows to replace content in any files included in the Container.
 
+### Electrode Native v0.39 changes
+
+**Adds support of `addEmbeddedFramework` directive for iOS** [#1478][6]\
+This directive allows to add an embedded Framework to the container project.
+
+### Electrode Native v0.41 changes
+
+**Adds support for React Native >= 0.61.0:** [#1542][7]\
+
 [1]: https://native.electrode.io/reference/index-3
 [2]: https://developer.android.com/guide/topics/permissions/overview
 [3]: https://github.com/electrode-io/electrode-native/pull/606
 [4]: https://github.com/electrode-io/electrode-native/pull/1196
 [5]: https://github.com/electrode-io/electrode-native/pull/1197
+[6]: https://github.com/electrode-io/electrode-native/pull/1478
+[7]: https://github.com/electrode-io/electrode-native/pull/1542

@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/Restart",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/Restart/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "Restart/Restart.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRestart.a",
+              "target": "Restart"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

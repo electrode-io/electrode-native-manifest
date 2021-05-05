@@ -1,0 +1,58 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [],
+    "permissions": [
+      "android.permission.CAMERA",
+      "android.permission.WRITE_EXTERNAL_STORAGE"
+    ],
+    "copy": [
+      {
+        "source": "android/src/main/res/*",
+        "dest": "lib/src/main/res/imagepicker"
+      }
+    ],
+    "replaceInFile": [
+      {
+        "path": "lib/src/main/java/com/imagepicker/utils/UI.java",
+        "string": "com.imagepicker.R",
+        "replaceWith": "com.walmartlabs.ern.container.R"
+      },
+      {
+        "path": "lib/src/main/java/com/imagepicker/ImagePickerModule.java",
+        "string": "R.style",
+        "replaceWith": "com.walmartlabs.ern.container.R.style"
+      },
+      {
+        "path": "lib/src/main/AndroidManifest.xml",
+        "string": "<application>",
+        "replaceWith": "<application>\n        <provider\n            android:name=\"com.imagepicker.FileProvider\"\n            android:authorities=\"${applicationId}.provider\"\n            android:exported=\"false\"\n            android:grantUriPermissions=\"true\">\n            <meta-data\n                android:name=\"android.support.FILE_PROVIDER_PATHS\"\n                android:resource=\"@xml/provider_paths\" />\n        </provider>"
+      }
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNImagePicker",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNImagePicker/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNImagePicker/RNImagePicker.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNImagePicker.a",
+              "target": "RNImagePicker"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
