@@ -10,6 +10,9 @@ in which to store the configuration might look puzzling at first.
 To know which directory to use for a new plugin configuration, just go through
 the following bullet points from top to bottom.
 
+- Does your plugin contains an Android implementation written in Kotlin ?\
+Use `ern_v0.48.0+`
+
 - Does your plugin configuration need to add Android resources (from a `res` directory) to the container or to add iOS resources to the container ?\
 Use `ern_v0.41.1+`
 
@@ -61,6 +64,10 @@ This directive allows to add an embedded Framework to the container project.
 
 **Adds support for React Native >= 0.61.0:** [#1542][7]\
 
+### Electrode Native v0.48 changes
+
+**Adds support for Kotlin implementeed plugins** [#1111][8]\
+
 [1]: https://native.electrode.io/reference/index-3
 [2]: https://developer.android.com/guide/topics/permissions/overview
 [3]: https://github.com/electrode-io/electrode-native/pull/606
@@ -68,3 +75,4 @@ This directive allows to add an embedded Framework to the container project.
 [5]: https://github.com/electrode-io/electrode-native/pull/1197
 [6]: https://github.com/electrode-io/electrode-native/pull/1478
 [7]: https://github.com/electrode-io/electrode-native/pull/1542
+[8]: https://github.com/electrode-io/electrode-native/pull/1111
