@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNKeyEvent",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNKeyEvent/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNKeyEvent/RNKeyEvent.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNKeyEvent.a",
+              "target": "RNKeyEvent"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
