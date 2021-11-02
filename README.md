@@ -1,4 +1,6 @@
-# Electrode Native - Master Manifest
+# electrode-native-manifest
+
+[![ci][9]][10]
 
 Please read the [documentation][1] for more information.
 
@@ -76,3 +78,5 @@ This directive allows to add an embedded Framework to the container project.
 [6]: https://github.com/electrode-io/electrode-native/pull/1478
 [7]: https://github.com/electrode-io/electrode-native/pull/1542
 [8]: https://github.com/electrode-io/electrode-native/pull/1111
+[9]: https://github.com/electrode-io/electrode-native-manifest/workflows/ci/badge.svg
+[10]: https://github.com/electrode-io/electrode-native-manifest/actions
