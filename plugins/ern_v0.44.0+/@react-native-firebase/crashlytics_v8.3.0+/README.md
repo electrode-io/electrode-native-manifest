@@ -13,5 +13,3 @@ You can refer to [React Native Firebase Crashlytics documentation](https://rnfir
 
 - In XCode, go to your application project `Build Phases` and add a new `Run Script` phase.
 As for the script itself, it should just execute the `run` executable from `FirebaseCrashlytics` that can be found in the `Pods/FirebaseCrashlytics` directory of the container. So this script phase should be a one liner, such as `./<path-to-container>/pods/FirebaseCrashlytics/run`.
-
-

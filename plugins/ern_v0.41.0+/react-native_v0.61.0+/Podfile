@@ -21,7 +21,7 @@ target '{{{projectName}}}' do
   pod 'React-RCTText', :path => '{{{nodeModulesRelativePath}}}/react-native/Libraries/Text'
   pod 'React-RCTVibration', :path => '{{{nodeModulesRelativePath}}}/react-native/Libraries/Vibration'
   pod 'React-Core/RCTWebSocket', :path => '{{{nodeModulesRelativePath}}}/react-native/'
-  
+
   pod 'React-cxxreact', :path => '{{{nodeModulesRelativePath}}}/react-native/ReactCommon/cxxreact'
   pod 'React-jsi', :path => '{{{nodeModulesRelativePath}}}/react-native/ReactCommon/jsi'
   pod 'React-jsiexecutor', :path => '{{{nodeModulesRelativePath}}}/react-native/ReactCommon/jsiexecutor'
@@ -29,13 +29,13 @@ target '{{{projectName}}}' do
   pod 'ReactCommon/jscallinvoker', :path => "{{{nodeModulesRelativePath}}}/react-native/ReactCommon"
   pod 'ReactCommon/turbomodule/core', :path => "{{{nodeModulesRelativePath}}}/react-native/ReactCommon"
   pod 'Yoga', :path => '{{{nodeModulesRelativePath}}}/react-native/ReactCommon/yoga'
-  
+
   pod 'DoubleConversion', :podspec => '{{{nodeModulesRelativePath}}}/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '{{{nodeModulesRelativePath}}}/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '{{{nodeModulesRelativePath}}}/react-native/third-party-podspecs/Folly.podspec'
 
   {{{extraPods}}}
-  
+
   use_native_modules!
-  
+
 end

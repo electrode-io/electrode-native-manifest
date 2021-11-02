@@ -1,4 +1,4 @@
-Android: 
+Android:
 
 This plugin requires the following entry to be added to the application's build.gradle.
 

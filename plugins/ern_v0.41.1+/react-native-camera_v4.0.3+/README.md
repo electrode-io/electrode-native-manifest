@@ -30,7 +30,7 @@ So if all is needed is to add this line let's say
 `pod 'react-native-camera', path: '../node_modules/react-native-camera', subspecs: [ 'FaceDetectorMLKit' ]`
 You can do it directly in react-native-camera plugin configuration (should be done in their override manifest because we don't want everyone to get these extra pods as its optional, so they'll have to copy react-native-camera config from this public manifest in their own manifest and modify it there), by adding this extra config line to `ios` block
 ```
-"extraPods": [  
+"extraPods": [
   "pod 'react-native-camera', path: 'node_modules/react-native-camera', subspecs: [ 'FaceDetectorMLKit' ]"
 ]
 ```
@@ -70,6 +70,6 @@ Then the `iOS` block would something like this
 ```
 
 
-Also please keep in mind that there may be fringe cases where extraPods , extraPodspecsSources, and extraPodfileStatements are not enough to customize the Podfile (should not be the case here). In this case, it is also possible to copy the react native plugin configuration / podfile from public manifest to team override manifest and directly change it there. 
+Also please keep in mind that there may be fringe cases where extraPods , extraPodspecsSources, and extraPodfileStatements are not enough to customize the Podfile (should not be the case here). In this case, it is also possible to copy the react native plugin configuration / podfile from public manifest to team override manifest and directly change it there.
 
 This should however only be done as last resort if current customization options of ERN are not enough.
