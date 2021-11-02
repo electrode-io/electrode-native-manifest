@@ -1,0 +1,14 @@
+name: ci
+on:
+  push:
+    branches: ['master']
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check whitespace errors
+        run: git -c core.whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol diff --check 4b825dc642cb6eb9a060e54bf8d69288fbee4904
+      - name: Validate manifest.json
+        run: cat manifest.json | jq
