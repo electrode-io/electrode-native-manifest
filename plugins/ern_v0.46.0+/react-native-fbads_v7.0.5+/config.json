@@ -1,0 +1,34 @@
+{
+  "android": {
+    "root": "android/app",
+    "dependencies": [
+      "implementation 'com.facebook.android:audience-network-sdk:6.2.+'",
+      "implementation 'com.facebook.android:facebook-android-sdk:6.+'"
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/ReactNativeAdsFacebook",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/ReactNativeAdsFacebook/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "ReactNativeAdsFacebook/ReactNativeAdsFacebook.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libReactNativeAdsFacebook.a",
+              "target": "ReactNativeAdsFacebook"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
