@@ -1,0 +1,9 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [
+      "implementation 'com.microsoft.appcenter:appcenter-crashes:4.4.2'",
+      "implementation 'com.microsoft.appcenter.reactnative:appcenter-react-native:4.4.3'"
+    ]
+  }
+}
