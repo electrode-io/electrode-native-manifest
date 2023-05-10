@@ -1,0 +1,33 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [
+      "implementation 'androidx.webkit:webkit:1.4.0'"
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNCWebView",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCWebView/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNCWebView/RNCWebView.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNCWebView.a",
+              "target": "RNCWebView"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
