@@ -1,0 +1,37 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": [],
+    "copy": [
+      {
+        "source": "android/src/paper/java/com/reactnativecommunity/progressview/*",
+        "dest": "lib/src/main/java/com/reactnativecommunity/progressview"
+      }
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNCProgressView",
+        "source": "ios/*"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCProgressView/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNCProgressView/RNCProgressView.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNCProgressView.a",
+              "target": "RNCProgressView"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
